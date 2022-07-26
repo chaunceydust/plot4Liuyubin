@@ -1,0 +1,159 @@
+Query         EH 
+Match_columns 68
+No_of_seqs    10 out of 16
+Neff          1.77549
+Searched_HMMs 80799
+Date          Thu Mar  3 09:13:16 2022
+Command       /usr/bin/hhsearch -i /tmp/tmppl80px44/query.a3m -o /tmp/tmppl80px44/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 1HRT_I ALPHA-THROMBIN (E.C.3.4 100.0 1.4E-38 1.7E-43  201.9   0.0   65    4-68      1-65  (65)
+  2 2PW8_I Thrombin light chain, T 100.0   3E-38 3.7E-43  200.3   0.0   65    4-68      1-65  (65)
+  3 1HIC_A HIRUDIN VARIANT 1 (RESI  99.9 2.7E-30 3.4E-35  158.2   0.0   51    4-54      1-51  (51)
+  4 1E0F_I THROMBIN, HAEMADIN; COA  99.8 2.1E-25 2.6E-30  139.3   0.0   53    4-67      1-57  (57)
+  5 3B23_C Thrombin light chain (E  94.7  0.0045 5.6E-08   35.9   0.0   21   48-68      8-29  (32)
+  6 2MT8_A MTAbl13 of grafted MCoT  37.5      28 0.00035   21.3   0.0   13   15-27     18-30  (39)
+  7 5XV8_A DP1, General transcript  21.3      83   0.001   19.8   0.0   13   54-66     17-29  (48)
+  8 5WOV_A Two inhibitor peptide t  19.9      92  0.0011   18.7   0.0   14   15-28     19-32  (34)
+  9 1W7Z_C TRYPSIN INHIBITOR II; S  17.3 1.2E+02  0.0014   18.0   0.0   14   15-28     17-30  (31)
+ 10 1W7Z_G TRYPSIN INHIBITOR II; S  17.3 1.2E+02  0.0014   18.0   0.0   14   15-28     17-30  (31)
+
+No 1
+>1HRT_I ALPHA-THROMBIN (E.C.3.4.21.5) COMPLEX WITH HIRUDIN; SERINE PROTEINASE, HYDROLASE-HYDROLASE INHIBITOR COMPLEX; 2.8A {Bos taurus} SCOP: g.3.15.2
+Probab=100.00  E-value=1.4e-38  Score=201.86  Aligned_cols=65  Identities=88%  Similarity=1.578  Sum_probs=63.7  Template_Neff=2.000
+
+Q EH                4 ITYTDCTESGQNLCLCEGSNVCGKGNKCILGSNGKGNQCVTGEGTPKPESHNNGDFEEIPEEYLQ   68 (68)
+Q Consensus         4 v~YtdCTESgQN~CLCegsnvCg~g~~C~l~s~g~~N~CV~GEGtpKpqs~~~~Dfeeipee~l~   68 (68)
+                      |+|||||+|+||||||+|+|||++|++|+++|+|++||||+|||||||||++++|||+||||+++
+T Consensus         1 i~ytdCtesgqn~clc~G~nvCg~G~~C~~~s~g~~nqCv~geGtpKPqs~~~~dFE~Ipee~~~   65 (65)
+T 1HRT_I            1 VVYTDCTESGQNLCLCEGSNVCGQGNKCILGSDGEKNQCVTGEGTPKPQSHNDGDFEEIPEEYLQ   65 (65)
+T ss_dssp             CEECBCCSTTCCSEECSSSCEECTTEEEECCCTTCCCEEEESCCCCCCCCCCCSCCCCCCSTTCC
+T ss_pred             CcceecCccCCeeEEeCCCccccCCCeeecCCCCCcCceecCCCCcCCCCCCCCCcccCCHHHhC
+Confidence            79999999999999999999999999999999999999999999999999999999999999985
+
+
+No 2
+>2PW8_I Thrombin light chain, Thrombin heavy; Thrombin, Hirudin, sulfotyrosine, HYDROLASE; 1.84A {Homo sapiens}
+Probab=100.00  E-value=3e-38  Score=200.33  Aligned_cols=65  Identities=89%  Similarity=1.589  Sum_probs=60.2  Template_Neff=2.000
+
+Q EH                4 ITYTDCTESGQNLCLCEGSNVCGKGNKCILGSNGKGNQCVTGEGTPKPESHNNGDFEEIPEEYLQ   68 (68)
+Q Consensus         4 v~YtdCTESgQN~CLCegsnvCg~g~~C~l~s~g~~N~CV~GEGtpKpqs~~~~Dfeeipee~l~   68 (68)
+                      |+|||||+|+||||||+|+|||++|++|+++|+|++||||+|||||||||++++|||+||||+++
+T Consensus         1 i~ytdCtesgqn~clc~G~nvCg~G~~C~~~s~g~~nqCv~geGtpKpqs~~~~dFE~ipee~~~   65 (65)
+T 2PW8_I            1 LTYTDCTESGQNLCLCEGSNVCGQGNKCILGSDGEKNQCVTGEGTPKPQSHNDGDFEEIPEEYLQ   65 (65)
+T ss_dssp             CEECBCCSTTEESEECSSSCEECTTEEEECCCTTCCCEEEESCCEECCCC---CCCCCCCGGGC-
+T ss_pred             CCceecCcCCCeeEEeCCCccccCCCeeecCCCCCCCceecCCCCcCCCCCCCCCcccCCHHHhC
+Confidence            79999999999999999999999999999999999999999999999999999999999999985
+
+
+No 3
+>1HIC_A HIRUDIN VARIANT 1 (RESIDUES 1; HIRUDIN; NMR {Hirudo medicinalis} SCOP: g.3.15.2
+Probab=99.92  E-value=2.7e-30  Score=158.24  Aligned_cols=51  Identities=86%  Similarity=1.589  Sum_probs=49.9  Template_Neff=1.900
+
+Q EH                4 ITYTDCTESGQNLCLCEGSNVCGKGNKCILGSNGKGNQCVTGEGTPKPESH   54 (68)
+Q Consensus         4 v~YtdCTESgQN~CLCegsnvCg~g~~C~l~s~g~~N~CV~GEGtpKpqs~   54 (68)
+                      |+|||||||+||||||+|+|||++|++|+++|+|++||||+|||||||||+
+T Consensus         1 i~ytdCtesgqn~clc~G~~vCg~G~~C~~~s~g~~nqCv~geGtpKpqs~   51 (51)
+T 1HIC_A            1 VVYTDCTESGQNLCLCEGSNVCGQGNKCILGSDGEKNQCVTGEGTPKPQSH   51 (51)
+T ss_dssp             CCCCBCSSTTEESSEEETTEECCTTEEEECCSSSCCCEEEESCCEECCSCC
+T ss_pred             CcceecCcCCCeeEEeCCCccccCCCeeeeCCCCCcCceeCCCCCcCCCCC
+Confidence            799999999999999999999999999999999999999999999999985
+
+
+No 4
+>1E0F_I THROMBIN, HAEMADIN; COAGULATION/CRYSTAL STRUCTURE/HEPARIN-B, COAGULATION/CRYSTAL STRUCTURE/HEPARIN-BINDING SITE/; 3.1A {HOMO SAPIENS} SCOP: g.3.15.2
+Probab=99.84  E-value=2.1e-25  Score=139.27  Aligned_cols=53  Identities=34%  Similarity=0.656  Sum_probs=51.0  Template_Neff=1.900
+
+Q EH                4 ITYTD----CTESGQNLCLCEGSNVCGKGNKCILGSNGKGNQCVTGEGTPKPESHNNGDFEEIPEEYL   67 (68)
+Q Consensus         4 v~Ytd----CTESgQN~CLCegsnvCg~g~~C~l~s~g~~N~CV~GEGtpKpqs~~~~Dfeeipee~l   67 (68)
+                      |+|||    ||+|+||||||+|+|||++|++|      ++|||   +|||||+|+++ ||| ||||++
+T Consensus         1 i~yt~~~~~Ctesgqn~clc~G~~vCg~G~~C------~~nqC---eGtpKpqs~~~-dFE-i~ee~~   57 (57)
+T 1E0F_I            1 IRFGMGKVPCPDGEVGYTCDCGEKICLYGQSC------NDGQC---SGDPKPSSEFE-EFE-IDEEEK   57 (57)
+T ss_dssp             CEESSSSSBCCSEEESSCEESSSSEECSSEEE------CSSCE---EECCCCSCSSC-CCC-CTTCCC
+T ss_pred             CcccCCceeCCCCCCceEEeCCCceecCCccc------CCCCc---cCCCCCccccc-ccc-CChhhC
+Confidence            79999    99999999999999999999999      68899   99999999999 999 999985
+
+
+No 5
+>3B23_C Thrombin light chain (E.C.3.4.21.5), Thrombin; HYDROLASE-HYDROLASE INHIBITOR complex; 2.4A {Homo sapiens}
+Probab=94.74  E-value=0.0045  Score=35.94  Aligned_cols=21  Identities=52%  Similarity=0.833  Sum_probs=15.8  Template_Neff=2.300
+
+Q EH               48 TPKPESHNNG-DFEEIPEEYLQ   68 (68)
+Q Consensus        48 tpKpqs~~~~-Dfeeipee~l~   68 (68)
+                      -||-+....+ |||+||+|+|+
+T Consensus         8 vPKM~k~g~ggdFE~IP~e~le   29 (32)
+T 3B23_C            8 EPKMHKTAPPFDFEAIPEEYLD   29 (32)
+T ss_pred             CcccCCCCCCCCcccCCHHHhc
+Confidence            4666665555 99999999864
+
+
+No 6
+>2MT8_A MTAbl13 of grafted MCoTI-II; cyclotide, trypsin inhibitor, Hydrolase Inhibitor; NMR {N/A}
+Probab=37.46  E-value=28  Score=21.34  Aligned_cols=13  Identities=38%  Similarity=1.319  Sum_probs=10.9  Template_Neff=1.000
+
+Q EH               15 NLCLCEGSNVCGK   27 (68)
+Q Consensus        15 N~CLCegsnvCg~   27 (68)
+                      .-|+|.|+..|+.
+T Consensus        18 gacicrgngycge   30 (39)
+T 2MT8_A           18 GACICRGNGYCGE   30 (39)
+T ss_dssp             TTCEECTTSBEEC
+T ss_pred             CceeecCCCcccc
+Confidence            5799999888875
+
+
+No 7
+>5XV8_A DP1, General transcription factor IIH; DNA repair factor, general transcription; NMR {Homo sapiens}
+Probab=21.26  E-value=83  Score=19.76  Aligned_cols=13  Identities=38%  Similarity=0.774  Sum_probs=10.0  Template_Neff=3.500
+
+Q EH               54 HNNGDFEEIPEEY   66 (68)
+Q Consensus        54 ~~~~Dfeeipee~   66 (68)
+                      ...+||+++|+.+
+T Consensus        17 sdddDFEeVPEKE   29 (48)
+T 5XV8_A           17 EDDEDFVEVPEKE   29 (48)
+T ss_dssp             CCCSCCEEECCCS
+T ss_pred             cchhhceecchhh
+Confidence            4467999999764
+
+
+No 8
+>5WOV_A Two inhibitor peptide topologies 2; cyclotide, plant peptide, cyclic cystine; NMR {N/A}
+Probab=19.87  E-value=92  Score=18.73  Aligned_cols=14  Identities=43%  Similarity=1.355  Sum_probs=10.0  Template_Neff=2.100
+
+Q EH               15 NLCLCEGSNVCGKG   28 (68)
+Q Consensus        15 N~CLCegsnvCg~g   28 (68)
+                      ..|+|..+.+||.+
+T Consensus        19 ~~CiC~~~G~CG~~   32 (34)
+T 5WOV_A           19 GACICRGNGYCGSG   32 (34)
+T ss_dssp             TTCCBCTTSBBHHH
+T ss_pred             CcceeecCCcccCC
+Confidence            45778877777765
+
+
+No 9
+>1W7Z_C TRYPSIN INHIBITOR II; SQUASH SEED INHIBITOR, CYSTEIN KNOT; 1.67A {ECBALLIUM ELATERIUM} SCOP: g.3.2.1
+Probab=17.30  E-value=1.2e+02  Score=18.04  Aligned_cols=14  Identities=29%  Similarity=0.850  Sum_probs=9.4  Template_Neff=2.000
+
+Q EH               15 NLCLCEGSNVCGKG   28 (68)
+Q Consensus        15 N~CLCegsnvCg~g   28 (68)
+                      ..|+|..+.+||.+
+T Consensus        17 ~~CvC~~~G~CGs~   30 (31)
+T 1W7Z_C           17 AGCVCGPNGFCGSP   30 (31)
+T ss_dssp             TTCEECTTSBEECC
+T ss_pred             CCCeeccCCcccCC
+Confidence            45777777777654
+
+
+No 10
+>1W7Z_G TRYPSIN INHIBITOR II; SQUASH SEED INHIBITOR, CYSTEIN KNOT; 1.67A {ECBALLIUM ELATERIUM} SCOP: g.3.2.1
+Probab=17.30  E-value=1.2e+02  Score=18.04  Aligned_cols=14  Identities=29%  Similarity=0.850  Sum_probs=9.4  Template_Neff=2.000
+
+Q EH               15 NLCLCEGSNVCGKG   28 (68)
+Q Consensus        15 N~CLCegsnvCg~g   28 (68)
+                      ..|+|..+.+||.+
+T Consensus        17 ~~CvC~~~G~CGs~   30 (31)
+T 1W7Z_G           17 AGCVCGPNGFCGSP   30 (31)
+T ss_dssp             TTCEECTTSBEECC
+T ss_pred             CCCeeccCCcccCC
+Confidence            45777777777654
+
+

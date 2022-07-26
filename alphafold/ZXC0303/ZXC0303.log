@@ -1,0 +1,578 @@
+[32m######### start running EH.fasta(Thu Mar  3 16:56:13 CST 2022)  ######### [0m
+
+
+I0303 16:56:13.236301 140085616793408 run_docker.py:87] Mounting /home/nvme0/alphafold_project/FASTA/ZXC -> /mnt/fasta_path_0
+I0303 16:56:13.236469 140085616793408 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/uniref90 -> /mnt/uniref90_database_path
+I0303 16:56:13.236595 140085616793408 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/mgnify -> /mnt/mgnify_database_path
+I0303 16:56:13.236688 140085616793408 run_docker.py:87] Mounting /home/nvme0/data -> /mnt/data_dir
+I0303 16:56:13.236776 140085616793408 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/pdb_mmcif -> /mnt/template_mmcif_dir
+I0303 16:56:13.236860 140085616793408 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/pdb_mmcif -> /mnt/obsolete_pdbs_path
+I0303 16:56:13.236942 140085616793408 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/pdb70 -> /mnt/pdb70_database_path
+I0303 16:56:13.237025 140085616793408 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/uniclust30/uniclust30_2018_08 -> /mnt/uniclust30_database_path
+I0303 16:56:13.237105 140085616793408 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/bfd -> /mnt/bfd_database_path
+I0303 16:56:19.793978 140085616793408 run_docker.py:222] I0303 08:56:19.792657 140520136548736 templates.py:857] Using precomputed obsolete pdbs /mnt/obsolete_pdbs_path/obsolete.dat.
+I0303 16:56:20.323417 140085616793408 run_docker.py:222] I0303 08:56:20.322450 140520136548736 xla_bridge.py:244] Unable to initialize backend 'tpu_driver': NOT_FOUND: Unable to find driver in registry given worker:
+I0303 16:56:20.594386 140085616793408 run_docker.py:222] I0303 08:56:20.593369 140520136548736 xla_bridge.py:244] Unable to initialize backend 'tpu': INVALID_ARGUMENT: TpuPlatform is not available.
+I0303 16:56:28.479295 140085616793408 run_docker.py:222] I0303 08:56:28.478206 140520136548736 run_alphafold.py:385] Have 5 models: ['model_1', 'model_2', 'model_3', 'model_4', 'model_5']
+I0303 16:56:28.479706 140085616793408 run_docker.py:222] I0303 08:56:28.478597 140520136548736 run_alphafold.py:397] Using random seed 684355006722973259 for the data pipeline
+I0303 16:56:28.479918 140085616793408 run_docker.py:222] I0303 08:56:28.479118 140520136548736 run_alphafold.py:150] Predicting EH
+I0303 16:56:28.480725 140085616793408 run_docker.py:222] I0303 08:56:28.480054 140520136548736 jackhmmer.py:130] Launching subprocess "/usr/bin/jackhmmer -o /dev/null -A /tmp/tmp6tanp5mj/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --incE 0.0001 -E 0.0001 --cpu 8 -N 1 /mnt/fasta_path_0/EH.fasta /mnt/uniref90_database_path/uniref90.fasta"
+I0303 16:56:28.577342 140085616793408 run_docker.py:222] I0303 08:56:28.576313 140520136548736 utils.py:36] Started Jackhmmer (uniref90.fasta) query
+I0303 17:04:05.215358 140085616793408 run_docker.py:222] I0303 09:04:05.213935 140520136548736 utils.py:40] Finished Jackhmmer (uniref90.fasta) query in 456.637 seconds
+I0303 17:04:05.216915 140085616793408 run_docker.py:222] I0303 09:04:05.216172 140520136548736 jackhmmer.py:130] Launching subprocess "/usr/bin/jackhmmer -o /dev/null -A /tmp/tmpexesbo47/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --incE 0.0001 -E 0.0001 --cpu 8 -N 1 /mnt/fasta_path_0/EH.fasta /mnt/mgnify_database_path/mgy_clusters_2018_12.fa"
+I0303 17:04:05.315588 140085616793408 run_docker.py:222] I0303 09:04:05.314264 140520136548736 utils.py:36] Started Jackhmmer (mgy_clusters_2018_12.fa) query
+I0303 17:12:38.707762 140085616793408 run_docker.py:222] I0303 09:12:38.706471 140520136548736 utils.py:40] Finished Jackhmmer (mgy_clusters_2018_12.fa) query in 513.392 seconds
+I0303 17:12:38.711135 140085616793408 run_docker.py:222] I0303 09:12:38.710444 140520136548736 hhsearch.py:85] Launching subprocess "/usr/bin/hhsearch -i /tmp/tmppl80px44/query.a3m -o /tmp/tmppl80px44/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70"
+I0303 17:12:38.809544 140085616793408 run_docker.py:222] I0303 09:12:38.808219 140520136548736 utils.py:36] Started HHsearch query
+I0303 17:13:16.917685 140085616793408 run_docker.py:222] I0303 09:13:16.916631 140520136548736 utils.py:40] Finished HHsearch query in 38.108 seconds
+I0303 17:13:16.926832 140085616793408 run_docker.py:222] I0303 09:13:16.926110 140520136548736 hhblits.py:128] Launching subprocess "/usr/bin/hhblits -i /mnt/fasta_path_0/EH.fasta -cpu 4 -oa3m /tmp/tmpzz0pg8xr/output.a3m -o /dev/null -n 3 -e 0.001 -maxseq 1000000 -realign_max 100000 -maxfilt 100000 -min_prefilter_hits 1000 -d /mnt/bfd_database_path/bfd_metaclust_clu_complete_id30_c90_final_seq.sorted_opt -d /mnt/uniclust30_database_path/uniclust30_2018_08"
+I0303 17:13:17.020594 140085616793408 run_docker.py:222] I0303 09:13:17.019301 140520136548736 utils.py:36] Started HHblits query
+I0303 17:17:31.707377 140085616793408 run_docker.py:222] I0303 09:17:31.706237 140520136548736 utils.py:40] Finished HHblits query in 254.686 seconds
+I0303 17:17:31.725726 140085616793408 run_docker.py:222] I0303 09:17:31.724988 140520136548736 templates.py:878] Searching for template for: EPRITYTDCTESGQNLCLCEGSNVCGKGNKCILGSNGKGNQCVTGEGTPKPESHNNGDFEEIPEEYLQ
+I0303 17:17:36.096530 140085616793408 run_docker.py:222] I0303 09:17:36.095838 140520136548736 templates.py:268] Found an exact template match 1hrt_I.
+I0303 17:17:36.455715 140085616793408 run_docker.py:222] I0303 09:17:36.455084 140520136548736 templates.py:268] Found an exact template match 2pw8_I.
+I0303 17:17:37.359097 140085616793408 run_docker.py:222] I0303 09:17:37.358371 140520136548736 templates.py:268] Found an exact template match 1e0f_I.
+I0303 17:17:38.807470 140085616793408 run_docker.py:222] I0303 09:17:38.806837 140520136548736 templates.py:268] Found an exact template match 1hic_A.
+I0303 17:17:39.257156 140085616793408 run_docker.py:222] I0303 09:17:39.256340 140520136548736 templates.py:268] Found an exact template match 3b23_C.
+I0303 17:17:40.264556 140085616793408 run_docker.py:222] I0303 09:17:40.263887 140520136548736 templates.py:268] Found an exact template match 2mt8_A.
+I0303 17:17:45.431512 140085616793408 run_docker.py:222] I0303 09:17:45.430701 140520136548736 templates.py:268] Found an exact template match 5xv8_A.
+I0303 17:17:46.267505 140085616793408 run_docker.py:222] I0303 09:17:46.266525 140520136548736 templates.py:268] Found an exact template match 5wov_A.
+I0303 17:17:46.627987 140085616793408 run_docker.py:222] I0303 09:17:46.626986 140520136548736 templates.py:268] Found an exact template match 1w7z_C.
+I0303 17:17:46.631363 140085616793408 run_docker.py:222] I0303 09:17:46.630795 140520136548736 templates.py:268] Found an exact template match 1w7z_G.
+I0303 17:17:46.653153 140085616793408 run_docker.py:222] I0303 09:17:46.652417 140520136548736 pipeline.py:221] Uniref90 MSA size: 16 sequences.
+I0303 17:17:46.653455 140085616793408 run_docker.py:222] I0303 09:17:46.652543 140520136548736 pipeline.py:222] BFD MSA size: 18 sequences.
+I0303 17:17:46.653701 140085616793408 run_docker.py:222] I0303 09:17:46.652642 140520136548736 pipeline.py:223] MGnify MSA size: 7 sequences.
+I0303 17:17:46.653946 140085616793408 run_docker.py:222] I0303 09:17:46.652730 140520136548736 pipeline.py:225] Final (deduplicated) MSA size: 35 sequences.
+I0303 17:17:46.654142 140085616793408 run_docker.py:222] I0303 09:17:46.653162 140520136548736 pipeline.py:228] Total number of templates (NB: this can include bad templates and is later filtered to top 4): 10.
+I0303 17:17:46.655180 140085616793408 run_docker.py:222] I0303 09:17:46.654384 140520136548736 run_alphafold.py:185] Running model model_1 on EH
+I0303 17:17:52.673346 140085616793408 run_docker.py:222] I0303 09:17:52.672202 140520136548736 model.py:166] Running predict with shape(feat) = {'aatype': (4, 68), 'residue_index': (4, 68), 'seq_length': (4,), 'template_aatype': (4, 4, 68), 'template_all_atom_masks': (4, 4, 68, 37), 'template_all_atom_positions': (4, 4, 68, 37, 3), 'template_sum_probs': (4, 4, 1), 'is_distillation': (4,), 'seq_mask': (4, 68), 'msa_mask': (4, 508, 68), 'msa_row_mask': (4, 508), 'random_crop_to_size_seed': (4, 2), 'template_mask': (4, 4), 'template_pseudo_beta': (4, 4, 68, 3), 'template_pseudo_beta_mask': (4, 4, 68), 'atom14_atom_exists': (4, 68, 14), 'residx_atom14_to_atom37': (4, 68, 14), 'residx_atom37_to_atom14': (4, 68, 37), 'atom37_atom_exists': (4, 68, 37), 'extra_msa': (4, 5120, 68), 'extra_msa_mask': (4, 5120, 68), 'extra_msa_row_mask': (4, 5120), 'bert_mask': (4, 508, 68), 'true_msa': (4, 508, 68), 'extra_has_deletion': (4, 5120, 68), 'extra_deletion_value': (4, 5120, 68), 'msa_feat': (4, 508, 68, 49), 'target_feat': (4, 68, 22)}
+I0303 17:24:30.559768 140085616793408 run_docker.py:222] I0303 09:24:30.558543 140520136548736 model.py:176] Output shape was {'distogram': {'bin_edges': (63,), 'logits': (68, 68, 64)}, 'experimentally_resolved': {'logits': (68, 37)}, 'masked_msa': {'logits': (508, 68, 23)}, 'predicted_lddt': {'logits': (68, 50)}, 'structure_module': {'final_atom_mask': (68, 37), 'final_atom_positions': (68, 37, 3)}, 'plddt': (68,), 'ranking_confidence': ()}
+I0303 17:24:30.559996 140085616793408 run_docker.py:222] I0303 09:24:30.559081 140520136548736 run_alphafold.py:199] Total JAX model model_1 on EH predict time (includes compilation time, see --benchmark): 397.9s
+I0303 17:24:54.357233 140085616793408 run_docker.py:222] I0303 09:24:54.355925 140520136548736 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 67 (GLN) of chain 0>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 17:24:54.543811 140085616793408 run_docker.py:222] I0303 09:24:54.543061 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 1 of 100.
+I0303 17:24:54.877676 140085616793408 run_docker.py:222] I0303 09:24:54.876957 140520136548736 amber_minimize.py:69] Restraining 506 / 967 particles.
+I0303 17:24:58.093755 140085616793408 run_docker.py:222] I0303 09:24:58.092746 140520136548736 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 17:25:11.160542 140085616793408 run_docker.py:222] I0303 09:25:11.159396 140520136548736 amber_minimize.py:493] Iteration completed: Einit 2640.90 Efinal -643.87 Time 2.47 s num residue violations 0 num residue exclusions 0
+I0303 17:25:19.486285 140085616793408 run_docker.py:222] I0303 09:25:19.485044 140520136548736 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 67 (GLN) of chain 0>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 17:25:19.817705 140085616793408 run_docker.py:222] I0303 09:25:19.816998 140520136548736 run_alphafold.py:185] Running model model_2 on EH
+I0303 17:25:22.253339 140085616793408 run_docker.py:222] I0303 09:25:22.252089 140520136548736 model.py:166] Running predict with shape(feat) = {'aatype': (4, 68), 'residue_index': (4, 68), 'seq_length': (4,), 'template_aatype': (4, 4, 68), 'template_all_atom_masks': (4, 4, 68, 37), 'template_all_atom_positions': (4, 4, 68, 37, 3), 'template_sum_probs': (4, 4, 1), 'is_distillation': (4,), 'seq_mask': (4, 68), 'msa_mask': (4, 508, 68), 'msa_row_mask': (4, 508), 'random_crop_to_size_seed': (4, 2), 'template_mask': (4, 4), 'template_pseudo_beta': (4, 4, 68, 3), 'template_pseudo_beta_mask': (4, 4, 68), 'atom14_atom_exists': (4, 68, 14), 'residx_atom14_to_atom37': (4, 68, 14), 'residx_atom37_to_atom14': (4, 68, 37), 'atom37_atom_exists': (4, 68, 37), 'extra_msa': (4, 1024, 68), 'extra_msa_mask': (4, 1024, 68), 'extra_msa_row_mask': (4, 1024), 'bert_mask': (4, 508, 68), 'true_msa': (4, 508, 68), 'extra_has_deletion': (4, 1024, 68), 'extra_deletion_value': (4, 1024, 68), 'msa_feat': (4, 508, 68, 49), 'target_feat': (4, 68, 22)}
+I0303 17:29:16.407356 140085616793408 run_docker.py:222] I0303 09:29:16.405931 140520136548736 model.py:176] Output shape was {'distogram': {'bin_edges': (63,), 'logits': (68, 68, 64)}, 'experimentally_resolved': {'logits': (68, 37)}, 'masked_msa': {'logits': (508, 68, 23)}, 'predicted_lddt': {'logits': (68, 50)}, 'structure_module': {'final_atom_mask': (68, 37), 'final_atom_positions': (68, 37, 3)}, 'plddt': (68,), 'ranking_confidence': ()}
+I0303 17:29:16.407709 140085616793408 run_docker.py:222] I0303 09:29:16.406665 140520136548736 run_alphafold.py:199] Total JAX model model_2 on EH predict time (includes compilation time, see --benchmark): 234.2s
+I0303 17:29:39.912549 140085616793408 run_docker.py:222] I0303 09:29:39.911495 140520136548736 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 67 (GLN) of chain 0>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 17:29:40.100223 140085616793408 run_docker.py:222] I0303 09:29:40.099482 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 1 of 100.
+I0303 17:29:40.428806 140085616793408 run_docker.py:222] I0303 09:29:40.427998 140520136548736 amber_minimize.py:69] Restraining 506 / 967 particles.
+I0303 17:29:43.634442 140085616793408 run_docker.py:222] I0303 09:29:43.633370 140520136548736 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 17:29:43.886821 140085616793408 run_docker.py:222] I0303 09:29:43.886070 140520136548736 amber_minimize.py:493] Iteration completed: Einit 1990.66 Efinal -658.57 Time 2.76 s num residue violations 0 num residue exclusions 0
+I0303 17:29:52.050182 140085616793408 run_docker.py:222] I0303 09:29:52.048952 140520136548736 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 67 (GLN) of chain 0>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 17:29:52.398099 140085616793408 run_docker.py:222] I0303 09:29:52.397418 140520136548736 run_alphafold.py:185] Running model model_3 on EH
+I0303 17:29:55.540747 140085616793408 run_docker.py:222] I0303 09:29:55.539782 140520136548736 model.py:166] Running predict with shape(feat) = {'aatype': (4, 68), 'residue_index': (4, 68), 'seq_length': (4,), 'is_distillation': (4,), 'seq_mask': (4, 68), 'msa_mask': (4, 512, 68), 'msa_row_mask': (4, 512), 'random_crop_to_size_seed': (4, 2), 'atom14_atom_exists': (4, 68, 14), 'residx_atom14_to_atom37': (4, 68, 14), 'residx_atom37_to_atom14': (4, 68, 37), 'atom37_atom_exists': (4, 68, 37), 'extra_msa': (4, 5120, 68), 'extra_msa_mask': (4, 5120, 68), 'extra_msa_row_mask': (4, 5120), 'bert_mask': (4, 512, 68), 'true_msa': (4, 512, 68), 'extra_has_deletion': (4, 5120, 68), 'extra_deletion_value': (4, 5120, 68), 'msa_feat': (4, 512, 68, 49), 'target_feat': (4, 68, 22)}
+I0303 17:32:59.733756 140085616793408 run_docker.py:222] I0303 09:32:59.732309 140520136548736 model.py:176] Output shape was {'distogram': {'bin_edges': (63,), 'logits': (68, 68, 64)}, 'experimentally_resolved': {'logits': (68, 37)}, 'masked_msa': {'logits': (512, 68, 23)}, 'predicted_lddt': {'logits': (68, 50)}, 'structure_module': {'final_atom_mask': (68, 37), 'final_atom_positions': (68, 37, 3)}, 'plddt': (68,), 'ranking_confidence': ()}
+I0303 17:32:59.734149 140085616793408 run_docker.py:222] I0303 09:32:59.732978 140520136548736 run_alphafold.py:199] Total JAX model model_3 on EH predict time (includes compilation time, see --benchmark): 184.2s
+I0303 17:33:15.216645 140085616793408 run_docker.py:222] I0303 09:33:15.215397 140520136548736 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 67 (GLN) of chain 0>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 17:33:15.406784 140085616793408 run_docker.py:222] I0303 09:33:15.406008 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 1 of 100.
+I0303 17:33:15.608648 140085616793408 run_docker.py:222] I0303 09:33:15.607712 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:15.609053 140085616793408 run_docker.py:222] I0303 09:33:15.608218 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 2 of 100.
+I0303 17:33:15.804025 140085616793408 run_docker.py:222] I0303 09:33:15.803188 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:15.804357 140085616793408 run_docker.py:222] I0303 09:33:15.803775 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 3 of 100.
+I0303 17:33:16.000662 140085616793408 run_docker.py:222] I0303 09:33:15.999855 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:16.000996 140085616793408 run_docker.py:222] I0303 09:33:16.000359 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 4 of 100.
+I0303 17:33:16.195841 140085616793408 run_docker.py:222] I0303 09:33:16.195072 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:16.196093 140085616793408 run_docker.py:222] I0303 09:33:16.195627 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 5 of 100.
+I0303 17:33:17.717732 140085616793408 run_docker.py:222] I0303 09:33:17.716695 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:17.718142 140085616793408 run_docker.py:222] I0303 09:33:17.717387 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 6 of 100.
+I0303 17:33:17.913133 140085616793408 run_docker.py:222] I0303 09:33:17.912324 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:17.913472 140085616793408 run_docker.py:222] I0303 09:33:17.912904 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 7 of 100.
+I0303 17:33:18.110699 140085616793408 run_docker.py:222] I0303 09:33:18.109875 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:18.111074 140085616793408 run_docker.py:222] I0303 09:33:18.110434 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 8 of 100.
+I0303 17:33:18.306577 140085616793408 run_docker.py:222] I0303 09:33:18.305711 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:18.306935 140085616793408 run_docker.py:222] I0303 09:33:18.306275 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 9 of 100.
+I0303 17:33:18.502810 140085616793408 run_docker.py:222] I0303 09:33:18.502027 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:18.503186 140085616793408 run_docker.py:222] I0303 09:33:18.502579 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 10 of 100.
+I0303 17:33:18.699081 140085616793408 run_docker.py:222] I0303 09:33:18.698216 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:18.699418 140085616793408 run_docker.py:222] I0303 09:33:18.698776 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 11 of 100.
+I0303 17:33:18.895036 140085616793408 run_docker.py:222] I0303 09:33:18.894240 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:18.895373 140085616793408 run_docker.py:222] I0303 09:33:18.894800 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 12 of 100.
+I0303 17:33:19.091163 140085616793408 run_docker.py:222] I0303 09:33:19.090354 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:19.091489 140085616793408 run_docker.py:222] I0303 09:33:19.090885 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 13 of 100.
+I0303 17:33:19.286828 140085616793408 run_docker.py:222] I0303 09:33:19.286077 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:19.287162 140085616793408 run_docker.py:222] I0303 09:33:19.286646 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 14 of 100.
+I0303 17:33:19.482959 140085616793408 run_docker.py:222] I0303 09:33:19.482108 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:19.483364 140085616793408 run_docker.py:222] I0303 09:33:19.482628 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 15 of 100.
+I0303 17:33:19.678854 140085616793408 run_docker.py:222] I0303 09:33:19.678092 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:19.679163 140085616793408 run_docker.py:222] I0303 09:33:19.678647 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 16 of 100.
+I0303 17:33:19.873472 140085616793408 run_docker.py:222] I0303 09:33:19.872669 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:19.873849 140085616793408 run_docker.py:222] I0303 09:33:19.873191 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 17 of 100.
+I0303 17:33:21.268563 140085616793408 run_docker.py:222] I0303 09:33:21.267652 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:21.268910 140085616793408 run_docker.py:222] I0303 09:33:21.268359 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 18 of 100.
+I0303 17:33:21.464672 140085616793408 run_docker.py:222] I0303 09:33:21.463860 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:21.465039 140085616793408 run_docker.py:222] I0303 09:33:21.464427 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 19 of 100.
+I0303 17:33:21.658249 140085616793408 run_docker.py:222] I0303 09:33:21.657467 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:21.658613 140085616793408 run_docker.py:222] I0303 09:33:21.658034 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 20 of 100.
+I0303 17:33:21.852613 140085616793408 run_docker.py:222] I0303 09:33:21.851771 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:21.852974 140085616793408 run_docker.py:222] I0303 09:33:21.852351 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 21 of 100.
+I0303 17:33:22.046783 140085616793408 run_docker.py:222] I0303 09:33:22.045964 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:22.047166 140085616793408 run_docker.py:222] I0303 09:33:22.046547 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 22 of 100.
+I0303 17:33:22.241021 140085616793408 run_docker.py:222] I0303 09:33:22.240105 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:22.241368 140085616793408 run_docker.py:222] I0303 09:33:22.240673 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 23 of 100.
+I0303 17:33:22.442102 140085616793408 run_docker.py:222] I0303 09:33:22.441223 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:22.442463 140085616793408 run_docker.py:222] I0303 09:33:22.441874 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 24 of 100.
+I0303 17:33:22.638915 140085616793408 run_docker.py:222] I0303 09:33:22.638053 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:22.639296 140085616793408 run_docker.py:222] I0303 09:33:22.638599 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 25 of 100.
+I0303 17:33:22.835067 140085616793408 run_docker.py:222] I0303 09:33:22.834185 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:22.835407 140085616793408 run_docker.py:222] I0303 09:33:22.834756 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 26 of 100.
+I0303 17:33:23.030913 140085616793408 run_docker.py:222] I0303 09:33:23.030071 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:23.031286 140085616793408 run_docker.py:222] I0303 09:33:23.030595 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 27 of 100.
+I0303 17:33:23.237625 140085616793408 run_docker.py:222] I0303 09:33:23.225312 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:23.237990 140085616793408 run_docker.py:222] I0303 09:33:23.225893 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 28 of 100.
+I0303 17:33:23.421753 140085616793408 run_docker.py:222] I0303 09:33:23.421023 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:23.422030 140085616793408 run_docker.py:222] I0303 09:33:23.421552 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 29 of 100.
+I0303 17:33:23.617154 140085616793408 run_docker.py:222] I0303 09:33:23.616409 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:23.617471 140085616793408 run_docker.py:222] I0303 09:33:23.616991 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 30 of 100.
+I0303 17:33:25.033338 140085616793408 run_docker.py:222] I0303 09:33:25.032364 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:25.033685 140085616793408 run_docker.py:222] I0303 09:33:25.033062 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 31 of 100.
+I0303 17:33:25.229611 140085616793408 run_docker.py:222] I0303 09:33:25.228855 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:25.229960 140085616793408 run_docker.py:222] I0303 09:33:25.229449 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 32 of 100.
+I0303 17:33:25.425432 140085616793408 run_docker.py:222] I0303 09:33:25.424621 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:25.425729 140085616793408 run_docker.py:222] I0303 09:33:25.425185 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 33 of 100.
+I0303 17:33:25.622751 140085616793408 run_docker.py:222] I0303 09:33:25.622012 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:25.623113 140085616793408 run_docker.py:222] I0303 09:33:25.622601 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 34 of 100.
+I0303 17:33:25.819346 140085616793408 run_docker.py:222] I0303 09:33:25.818619 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:25.819724 140085616793408 run_docker.py:222] I0303 09:33:25.819219 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 35 of 100.
+I0303 17:33:26.016902 140085616793408 run_docker.py:222] I0303 09:33:26.016172 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:26.017271 140085616793408 run_docker.py:222] I0303 09:33:26.016785 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 36 of 100.
+I0303 17:33:26.212763 140085616793408 run_docker.py:222] I0303 09:33:26.212023 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:26.213082 140085616793408 run_docker.py:222] I0303 09:33:26.212607 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 37 of 100.
+I0303 17:33:26.408676 140085616793408 run_docker.py:222] I0303 09:33:26.407947 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:26.409036 140085616793408 run_docker.py:222] I0303 09:33:26.408528 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 38 of 100.
+I0303 17:33:26.605566 140085616793408 run_docker.py:222] I0303 09:33:26.604834 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:26.605880 140085616793408 run_docker.py:222] I0303 09:33:26.605393 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 39 of 100.
+I0303 17:33:26.800706 140085616793408 run_docker.py:222] I0303 09:33:26.799998 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:26.801081 140085616793408 run_docker.py:222] I0303 09:33:26.800573 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 40 of 100.
+I0303 17:33:26.996250 140085616793408 run_docker.py:222] I0303 09:33:26.995534 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:26.996607 140085616793408 run_docker.py:222] I0303 09:33:26.996094 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 41 of 100.
+I0303 17:33:27.192191 140085616793408 run_docker.py:222] I0303 09:33:27.191464 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:27.192516 140085616793408 run_docker.py:222] I0303 09:33:27.192022 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 42 of 100.
+I0303 17:33:28.596799 140085616793408 run_docker.py:222] I0303 09:33:28.595812 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:28.597144 140085616793408 run_docker.py:222] I0303 09:33:28.596472 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 43 of 100.
+I0303 17:33:28.792724 140085616793408 run_docker.py:222] I0303 09:33:28.791968 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:28.793031 140085616793408 run_docker.py:222] I0303 09:33:28.792549 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 44 of 100.
+I0303 17:33:28.986213 140085616793408 run_docker.py:222] I0303 09:33:28.985482 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:28.986588 140085616793408 run_docker.py:222] I0303 09:33:28.986081 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 45 of 100.
+I0303 17:33:29.180572 140085616793408 run_docker.py:222] I0303 09:33:29.179815 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:29.180895 140085616793408 run_docker.py:222] I0303 09:33:29.180375 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 46 of 100.
+I0303 17:33:29.374378 140085616793408 run_docker.py:222] I0303 09:33:29.373641 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:29.374730 140085616793408 run_docker.py:222] I0303 09:33:29.374249 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 47 of 100.
+I0303 17:33:29.569143 140085616793408 run_docker.py:222] I0303 09:33:29.568397 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:29.569445 140085616793408 run_docker.py:222] I0303 09:33:29.568954 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 48 of 100.
+I0303 17:33:29.764843 140085616793408 run_docker.py:222] I0303 09:33:29.764076 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:29.765140 140085616793408 run_docker.py:222] I0303 09:33:29.764660 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 49 of 100.
+I0303 17:33:29.962843 140085616793408 run_docker.py:222] I0303 09:33:29.962108 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:29.963193 140085616793408 run_docker.py:222] I0303 09:33:29.962694 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 50 of 100.
+I0303 17:33:30.160112 140085616793408 run_docker.py:222] I0303 09:33:30.159347 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:30.160401 140085616793408 run_docker.py:222] I0303 09:33:30.159922 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 51 of 100.
+I0303 17:33:30.356238 140085616793408 run_docker.py:222] I0303 09:33:30.355499 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:30.356553 140085616793408 run_docker.py:222] I0303 09:33:30.356056 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 52 of 100.
+I0303 17:33:30.552634 140085616793408 run_docker.py:222] I0303 09:33:30.551895 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:30.552958 140085616793408 run_docker.py:222] I0303 09:33:30.552454 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 53 of 100.
+I0303 17:33:30.749072 140085616793408 run_docker.py:222] I0303 09:33:30.748328 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:30.749387 140085616793408 run_docker.py:222] I0303 09:33:30.748877 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 54 of 100.
+I0303 17:33:32.154739 140085616793408 run_docker.py:222] I0303 09:33:32.153756 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:32.155133 140085616793408 run_docker.py:222] I0303 09:33:32.154450 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 55 of 100.
+I0303 17:33:32.351584 140085616793408 run_docker.py:222] I0303 09:33:32.350773 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:32.351881 140085616793408 run_docker.py:222] I0303 09:33:32.351370 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 56 of 100.
+I0303 17:33:32.550584 140085616793408 run_docker.py:222] I0303 09:33:32.549844 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:32.558351 140085616793408 run_docker.py:222] I0303 09:33:32.550484 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 57 of 100.
+I0303 17:33:32.746149 140085616793408 run_docker.py:222] I0303 09:33:32.745391 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:32.746458 140085616793408 run_docker.py:222] I0303 09:33:32.745960 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 58 of 100.
+I0303 17:33:32.941566 140085616793408 run_docker.py:222] I0303 09:33:32.940814 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:32.949126 140085616793408 run_docker.py:222] I0303 09:33:32.941396 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 59 of 100.
+I0303 17:33:33.135758 140085616793408 run_docker.py:222] I0303 09:33:33.135004 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:33.136079 140085616793408 run_docker.py:222] I0303 09:33:33.135569 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 60 of 100.
+I0303 17:33:33.329149 140085616793408 run_docker.py:222] I0303 09:33:33.328415 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:33.329457 140085616793408 run_docker.py:222] I0303 09:33:33.328996 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 61 of 100.
+I0303 17:33:33.524214 140085616793408 run_docker.py:222] I0303 09:33:33.523496 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:33.524553 140085616793408 run_docker.py:222] I0303 09:33:33.524079 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 62 of 100.
+I0303 17:33:33.720531 140085616793408 run_docker.py:222] I0303 09:33:33.719811 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:33.720864 140085616793408 run_docker.py:222] I0303 09:33:33.720386 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 63 of 100.
+I0303 17:33:33.915769 140085616793408 run_docker.py:222] I0303 09:33:33.915030 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:33.916100 140085616793408 run_docker.py:222] I0303 09:33:33.915612 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 64 of 100.
+I0303 17:33:34.111476 140085616793408 run_docker.py:222] I0303 09:33:34.110729 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:34.111791 140085616793408 run_docker.py:222] I0303 09:33:34.111319 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 65 of 100.
+I0303 17:33:34.307038 140085616793408 run_docker.py:222] I0303 09:33:34.306264 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:34.307318 140085616793408 run_docker.py:222] I0303 09:33:34.306826 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 66 of 100.
+I0303 17:33:34.502119 140085616793408 run_docker.py:222] I0303 09:33:34.501401 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:34.502464 140085616793408 run_docker.py:222] I0303 09:33:34.501954 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 67 of 100.
+I0303 17:33:35.971531 140085616793408 run_docker.py:222] I0303 09:33:35.970681 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:35.971926 140085616793408 run_docker.py:222] I0303 09:33:35.971432 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 68 of 100.
+I0303 17:33:36.168303 140085616793408 run_docker.py:222] I0303 09:33:36.167562 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:36.168635 140085616793408 run_docker.py:222] I0303 09:33:36.168167 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 69 of 100.
+I0303 17:33:36.363166 140085616793408 run_docker.py:222] I0303 09:33:36.362421 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:36.363550 140085616793408 run_docker.py:222] I0303 09:33:36.363055 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 70 of 100.
+I0303 17:33:36.557970 140085616793408 run_docker.py:222] I0303 09:33:36.557241 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:36.558338 140085616793408 run_docker.py:222] I0303 09:33:36.557834 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 71 of 100.
+I0303 17:33:36.751142 140085616793408 run_docker.py:222] I0303 09:33:36.750409 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:36.751525 140085616793408 run_docker.py:222] I0303 09:33:36.751015 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 72 of 100.
+I0303 17:33:36.943817 140085616793408 run_docker.py:222] I0303 09:33:36.943080 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:36.944142 140085616793408 run_docker.py:222] I0303 09:33:36.943676 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 73 of 100.
+I0303 17:33:37.140442 140085616793408 run_docker.py:222] I0303 09:33:37.139699 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:37.140778 140085616793408 run_docker.py:222] I0303 09:33:37.140275 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 74 of 100.
+I0303 17:33:37.335513 140085616793408 run_docker.py:222] I0303 09:33:37.334785 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:37.335918 140085616793408 run_docker.py:222] I0303 09:33:37.335404 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 75 of 100.
+I0303 17:33:37.533272 140085616793408 run_docker.py:222] I0303 09:33:37.532511 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:37.533618 140085616793408 run_docker.py:222] I0303 09:33:37.533097 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 76 of 100.
+I0303 17:33:37.734667 140085616793408 run_docker.py:222] I0303 09:33:37.733917 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:37.735065 140085616793408 run_docker.py:222] I0303 09:33:37.734512 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 77 of 100.
+I0303 17:33:37.946741 140085616793408 run_docker.py:222] I0303 09:33:37.945951 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:37.947079 140085616793408 run_docker.py:222] I0303 09:33:37.946549 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 78 of 100.
+I0303 17:33:38.142350 140085616793408 run_docker.py:222] I0303 09:33:38.141594 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:38.142664 140085616793408 run_docker.py:222] I0303 09:33:38.142183 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 79 of 100.
+I0303 17:33:39.546224 140085616793408 run_docker.py:222] I0303 09:33:39.545364 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:39.546544 140085616793408 run_docker.py:222] I0303 09:33:39.546060 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 80 of 100.
+I0303 17:33:39.744053 140085616793408 run_docker.py:222] I0303 09:33:39.743322 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:39.744407 140085616793408 run_docker.py:222] I0303 09:33:39.743935 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 81 of 100.
+I0303 17:33:39.939575 140085616793408 run_docker.py:222] I0303 09:33:39.938802 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:39.939901 140085616793408 run_docker.py:222] I0303 09:33:39.939423 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 82 of 100.
+I0303 17:33:40.137055 140085616793408 run_docker.py:222] I0303 09:33:40.136302 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:40.137415 140085616793408 run_docker.py:222] I0303 09:33:40.136920 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 83 of 100.
+I0303 17:33:40.331128 140085616793408 run_docker.py:222] I0303 09:33:40.330327 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:40.331425 140085616793408 run_docker.py:222] I0303 09:33:40.330921 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 84 of 100.
+I0303 17:33:40.524338 140085616793408 run_docker.py:222] I0303 09:33:40.523607 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:40.524677 140085616793408 run_docker.py:222] I0303 09:33:40.524201 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 85 of 100.
+I0303 17:33:40.717695 140085616793408 run_docker.py:222] I0303 09:33:40.716921 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:40.717987 140085616793408 run_docker.py:222] I0303 09:33:40.717497 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 86 of 100.
+I0303 17:33:40.911769 140085616793408 run_docker.py:222] I0303 09:33:40.910993 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:40.912064 140085616793408 run_docker.py:222] I0303 09:33:40.911590 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 87 of 100.
+I0303 17:33:41.107852 140085616793408 run_docker.py:222] I0303 09:33:41.107081 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:41.108144 140085616793408 run_docker.py:222] I0303 09:33:41.107663 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 88 of 100.
+I0303 17:33:41.304267 140085616793408 run_docker.py:222] I0303 09:33:41.303287 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:41.304637 140085616793408 run_docker.py:222] I0303 09:33:41.303885 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 89 of 100.
+I0303 17:33:41.499666 140085616793408 run_docker.py:222] I0303 09:33:41.498677 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:41.500034 140085616793408 run_docker.py:222] I0303 09:33:41.499257 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 90 of 100.
+I0303 17:33:41.695064 140085616793408 run_docker.py:222] I0303 09:33:41.694030 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:41.695442 140085616793408 run_docker.py:222] I0303 09:33:41.694602 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 91 of 100.
+I0303 17:33:41.890245 140085616793408 run_docker.py:222] I0303 09:33:41.889271 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:41.890611 140085616793408 run_docker.py:222] I0303 09:33:41.889851 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 92 of 100.
+I0303 17:33:43.314075 140085616793408 run_docker.py:222] I0303 09:33:43.313012 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:43.314440 140085616793408 run_docker.py:222] I0303 09:33:43.313774 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 93 of 100.
+I0303 17:33:43.511379 140085616793408 run_docker.py:222] I0303 09:33:43.510621 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:43.511749 140085616793408 run_docker.py:222] I0303 09:33:43.511227 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 94 of 100.
+I0303 17:33:43.708300 140085616793408 run_docker.py:222] I0303 09:33:43.707528 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:43.708604 140085616793408 run_docker.py:222] I0303 09:33:43.708126 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 95 of 100.
+I0303 17:33:43.902078 140085616793408 run_docker.py:222] I0303 09:33:43.901345 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:43.902398 140085616793408 run_docker.py:222] I0303 09:33:43.901932 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 96 of 100.
+I0303 17:33:44.098293 140085616793408 run_docker.py:222] I0303 09:33:44.097511 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:44.098603 140085616793408 run_docker.py:222] I0303 09:33:44.098106 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 97 of 100.
+I0303 17:33:44.295130 140085616793408 run_docker.py:222] I0303 09:33:44.294309 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:44.295418 140085616793408 run_docker.py:222] I0303 09:33:44.294903 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 98 of 100.
+I0303 17:33:44.490969 140085616793408 run_docker.py:222] I0303 09:33:44.490242 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:44.491358 140085616793408 run_docker.py:222] I0303 09:33:44.490837 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 99 of 100.
+I0303 17:33:44.687646 140085616793408 run_docker.py:222] I0303 09:33:44.686824 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:44.687928 140085616793408 run_docker.py:222] I0303 09:33:44.687429 140520136548736 amber_minimize.py:405] Minimizing protein, attempt 100 of 100.
+I0303 17:33:44.884341 140085616793408 run_docker.py:222] I0303 09:33:44.883600 140520136548736 amber_minimize.py:413] No template found for residue 31 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 17:33:44.923933 140085616793408 run_docker.py:222] Traceback (most recent call last):
+I0303 17:33:44.924184 140085616793408 run_docker.py:222] File "/app/alphafold/run_alphafold.py", line 427, in <module>
+I0303 17:33:44.924388 140085616793408 run_docker.py:222] app.run(main)
+I0303 17:33:44.924577 140085616793408 run_docker.py:222] File "/opt/conda/lib/python3.7/site-packages/absl/app.py", line 312, in run
+I0303 17:33:44.924803 140085616793408 run_docker.py:222] _run_main(main, args)
+I0303 17:33:44.924988 140085616793408 run_docker.py:222] File "/opt/conda/lib/python3.7/site-packages/absl/app.py", line 258, in _run_main
+I0303 17:33:44.925164 140085616793408 run_docker.py:222] sys.exit(main(argv))
+I0303 17:33:44.925340 140085616793408 run_docker.py:222] File "/app/alphafold/run_alphafold.py", line 412, in main
+I0303 17:33:44.925513 140085616793408 run_docker.py:222] is_prokaryote=is_prokaryote)
+I0303 17:33:44.925685 140085616793408 run_docker.py:222] File "/app/alphafold/run_alphafold.py", line 237, in predict_structure
+I0303 17:33:44.925857 140085616793408 run_docker.py:222] relaxed_pdb_str, _, _ = amber_relaxer.process(prot=unrelaxed_protein)
+I0303 17:33:44.926027 140085616793408 run_docker.py:222] File "/app/alphafold/alphafold/relax/relax.py", line 62, in process
+I0303 17:33:44.926198 140085616793408 run_docker.py:222] max_outer_iterations=self._max_outer_iterations)
+I0303 17:33:44.926368 140085616793408 run_docker.py:222] File "/app/alphafold/alphafold/relax/amber_minimize.py", line 476, in run_pipeline
+I0303 17:33:44.926542 140085616793408 run_docker.py:222] max_attempts=max_attempts)
+I0303 17:33:44.926716 140085616793408 run_docker.py:222] File "/app/alphafold/alphafold/relax/amber_minimize.py", line 415, in _run_one_iteration
+I0303 17:33:44.926888 140085616793408 run_docker.py:222] raise ValueError(f"Minimization failed after {max_attempts} attempts.")
+I0303 17:33:44.927102 140085616793408 run_docker.py:222] ValueError: Minimization failed after 100 attempts.
+[32m######### start running rHV-2.fasta(Thu Mar  3 17:33:51 CST 2022)  ######### [0m
+
+
+I0303 17:33:52.063140 139797198628672 run_docker.py:87] Mounting /home/nvme0/alphafold_project/FASTA/ZXC -> /mnt/fasta_path_0
+I0303 17:33:52.063355 139797198628672 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/uniref90 -> /mnt/uniref90_database_path
+I0303 17:33:52.063474 139797198628672 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/mgnify -> /mnt/mgnify_database_path
+I0303 17:33:52.063565 139797198628672 run_docker.py:87] Mounting /home/nvme0/data -> /mnt/data_dir
+I0303 17:33:52.063648 139797198628672 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/pdb_mmcif -> /mnt/template_mmcif_dir
+I0303 17:33:52.063731 139797198628672 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/pdb_mmcif -> /mnt/obsolete_pdbs_path
+I0303 17:33:52.063812 139797198628672 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/pdb70 -> /mnt/pdb70_database_path
+I0303 17:33:52.063893 139797198628672 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/uniclust30/uniclust30_2018_08 -> /mnt/uniclust30_database_path
+I0303 17:33:52.063972 139797198628672 run_docker.py:87] Mounting /home/nvme0/data/alphafold_data/bfd -> /mnt/bfd_database_path
+I0303 17:33:58.319728 139797198628672 run_docker.py:222] I0303 09:33:58.318416 140201575440768 templates.py:857] Using precomputed obsolete pdbs /mnt/obsolete_pdbs_path/obsolete.dat.
+I0303 17:33:58.849855 139797198628672 run_docker.py:222] I0303 09:33:58.848947 140201575440768 xla_bridge.py:244] Unable to initialize backend 'tpu_driver': NOT_FOUND: Unable to find driver in registry given worker:
+I0303 17:33:59.057112 139797198628672 run_docker.py:222] I0303 09:33:59.056184 140201575440768 xla_bridge.py:244] Unable to initialize backend 'tpu': INVALID_ARGUMENT: TpuPlatform is not available.
+I0303 17:34:06.844830 139797198628672 run_docker.py:222] I0303 09:34:06.843604 140201575440768 run_alphafold.py:385] Have 5 models: ['model_1', 'model_2', 'model_3', 'model_4', 'model_5']
+I0303 17:34:06.845202 139797198628672 run_docker.py:222] I0303 09:34:06.843969 140201575440768 run_alphafold.py:397] Using random seed 1234959885066288955 for the data pipeline
+I0303 17:34:06.845408 139797198628672 run_docker.py:222] I0303 09:34:06.844572 140201575440768 run_alphafold.py:150] Predicting rHV-2
+I0303 17:34:06.846249 139797198628672 run_docker.py:222] I0303 09:34:06.845572 140201575440768 jackhmmer.py:130] Launching subprocess "/usr/bin/jackhmmer -o /dev/null -A /tmp/tmpf7ytmb8s/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --incE 0.0001 -E 0.0001 --cpu 8 -N 1 /mnt/fasta_path_0/rHV-2.fasta /mnt/uniref90_database_path/uniref90.fasta"
+I0303 17:34:06.942201 139797198628672 run_docker.py:222] I0303 09:34:06.941121 140201575440768 utils.py:36] Started Jackhmmer (uniref90.fasta) query
+I0303 17:41:38.187555 139797198628672 run_docker.py:222] I0303 09:41:38.186240 140201575440768 utils.py:40] Finished Jackhmmer (uniref90.fasta) query in 451.245 seconds
+I0303 17:41:38.189157 139797198628672 run_docker.py:222] I0303 09:41:38.188367 140201575440768 jackhmmer.py:130] Launching subprocess "/usr/bin/jackhmmer -o /dev/null -A /tmp/tmp5gnsf9sp/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --incE 0.0001 -E 0.0001 --cpu 8 -N 1 /mnt/fasta_path_0/rHV-2.fasta /mnt/mgnify_database_path/mgy_clusters_2018_12.fa"
+I0303 17:41:38.291975 139797198628672 run_docker.py:222] I0303 09:41:38.290724 140201575440768 utils.py:36] Started Jackhmmer (mgy_clusters_2018_12.fa) query
+I0303 17:49:32.202520 139797198628672 run_docker.py:222] I0303 09:49:32.201389 140201575440768 utils.py:40] Finished Jackhmmer (mgy_clusters_2018_12.fa) query in 473.910 seconds
+I0303 17:49:32.205884 139797198628672 run_docker.py:222] I0303 09:49:32.205256 140201575440768 hhsearch.py:85] Launching subprocess "/usr/bin/hhsearch -i /tmp/tmppgmwuuwp/query.a3m -o /tmp/tmppgmwuuwp/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70"
+I0303 17:49:32.308182 139797198628672 run_docker.py:222] I0303 09:49:32.306908 140201575440768 utils.py:36] Started HHsearch query
+I0303 17:50:13.372661 139797198628672 run_docker.py:222] I0303 09:50:13.371503 140201575440768 utils.py:40] Finished HHsearch query in 41.064 seconds
+I0303 17:50:13.388807 139797198628672 run_docker.py:222] I0303 09:50:13.388047 140201575440768 hhblits.py:128] Launching subprocess "/usr/bin/hhblits -i /mnt/fasta_path_0/rHV-2.fasta -cpu 4 -oa3m /tmp/tmp_51bl4sl/output.a3m -o /dev/null -n 3 -e 0.001 -maxseq 1000000 -realign_max 100000 -maxfilt 100000 -min_prefilter_hits 1000 -d /mnt/bfd_database_path/bfd_metaclust_clu_complete_id30_c90_final_seq.sorted_opt -d /mnt/uniclust30_database_path/uniclust30_2018_08"
+I0303 17:50:13.485088 139797198628672 run_docker.py:222] I0303 09:50:13.483748 140201575440768 utils.py:36] Started HHblits query
+I0303 17:54:13.035800 139797198628672 run_docker.py:222] I0303 09:54:13.034343 140201575440768 utils.py:40] Finished HHblits query in 239.550 seconds
+I0303 17:54:13.095180 139797198628672 run_docker.py:222] I0303 09:54:13.094512 140201575440768 templates.py:878] Searching for template for: ITYTDCTESGQNLCLCEGSNVCGKGNKCILGSNGKGNQCVTGEGTPKPESHNNGDFEEIPEEYLQ
+I0303 17:54:24.199106 139797198628672 run_docker.py:222] I0303 09:54:24.198055 140201575440768 templates.py:268] Found an exact template match 1hrt_I.
+I0303 17:54:24.635493 139797198628672 run_docker.py:222] I0303 09:54:24.634734 140201575440768 templates.py:268] Found an exact template match 2pw8_I.
+I0303 17:54:25.562396 139797198628672 run_docker.py:222] I0303 09:54:25.561484 140201575440768 templates.py:268] Found an exact template match 1e0f_I.
+I0303 17:54:27.067165 139797198628672 run_docker.py:222] I0303 09:54:27.066192 140201575440768 templates.py:268] Found an exact template match 1hic_A.
+I0303 17:54:27.529942 139797198628672 run_docker.py:222] I0303 09:54:27.529135 140201575440768 templates.py:268] Found an exact template match 3b23_C.
+I0303 17:54:28.573031 139797198628672 run_docker.py:222] I0303 09:54:28.572030 140201575440768 templates.py:268] Found an exact template match 2mt8_A.
+I0303 17:54:34.028781 139797198628672 run_docker.py:222] I0303 09:54:34.027721 140201575440768 templates.py:268] Found an exact template match 5xv8_A.
+I0303 17:54:34.931152 139797198628672 run_docker.py:222] I0303 09:54:34.930179 140201575440768 templates.py:268] Found an exact template match 5wov_A.
+I0303 17:54:35.315719 139797198628672 run_docker.py:222] I0303 09:54:35.315002 140201575440768 templates.py:268] Found an exact template match 1w7z_C.
+I0303 17:54:35.319522 139797198628672 run_docker.py:222] I0303 09:54:35.318933 140201575440768 templates.py:268] Found an exact template match 1w7z_G.
+I0303 17:54:35.334716 139797198628672 run_docker.py:222] I0303 09:54:35.334006 140201575440768 pipeline.py:221] Uniref90 MSA size: 16 sequences.
+I0303 17:54:35.335029 139797198628672 run_docker.py:222] I0303 09:54:35.334138 140201575440768 pipeline.py:222] BFD MSA size: 18 sequences.
+I0303 17:54:35.335237 139797198628672 run_docker.py:222] I0303 09:54:35.334233 140201575440768 pipeline.py:223] MGnify MSA size: 7 sequences.
+I0303 17:54:35.335496 139797198628672 run_docker.py:222] I0303 09:54:35.334321 140201575440768 pipeline.py:225] Final (deduplicated) MSA size: 33 sequences.
+I0303 17:54:35.335643 139797198628672 run_docker.py:222] I0303 09:54:35.334843 140201575440768 pipeline.py:228] Total number of templates (NB: this can include bad templates and is later filtered to top 4): 10.
+I0303 17:54:35.351606 139797198628672 run_docker.py:222] I0303 09:54:35.350942 140201575440768 run_alphafold.py:185] Running model model_1 on rHV-2
+I0303 17:54:42.262692 139797198628672 run_docker.py:222] I0303 09:54:42.261371 140201575440768 model.py:166] Running predict with shape(feat) = {'aatype': (4, 65), 'residue_index': (4, 65), 'seq_length': (4,), 'template_aatype': (4, 4, 65), 'template_all_atom_masks': (4, 4, 65, 37), 'template_all_atom_positions': (4, 4, 65, 37, 3), 'template_sum_probs': (4, 4, 1), 'is_distillation': (4,), 'seq_mask': (4, 65), 'msa_mask': (4, 508, 65), 'msa_row_mask': (4, 508), 'random_crop_to_size_seed': (4, 2), 'template_mask': (4, 4), 'template_pseudo_beta': (4, 4, 65, 3), 'template_pseudo_beta_mask': (4, 4, 65), 'atom14_atom_exists': (4, 65, 14), 'residx_atom14_to_atom37': (4, 65, 14), 'residx_atom37_to_atom14': (4, 65, 37), 'atom37_atom_exists': (4, 65, 37), 'extra_msa': (4, 5120, 65), 'extra_msa_mask': (4, 5120, 65), 'extra_msa_row_mask': (4, 5120), 'bert_mask': (4, 508, 65), 'true_msa': (4, 508, 65), 'extra_has_deletion': (4, 5120, 65), 'extra_deletion_value': (4, 5120, 65), 'msa_feat': (4, 508, 65, 49), 'target_feat': (4, 65, 22)}
+I0303 18:01:11.885400 139797198628672 run_docker.py:222] I0303 10:01:11.883978 140201575440768 model.py:176] Output shape was {'distogram': {'bin_edges': (63,), 'logits': (65, 65, 64)}, 'experimentally_resolved': {'logits': (65, 37)}, 'masked_msa': {'logits': (508, 65, 23)}, 'predicted_lddt': {'logits': (65, 50)}, 'structure_module': {'final_atom_mask': (65, 37), 'final_atom_positions': (65, 37, 3)}, 'plddt': (65,), 'ranking_confidence': ()}
+I0303 18:01:11.885761 139797198628672 run_docker.py:222] I0303 10:01:11.884540 140201575440768 run_alphafold.py:199] Total JAX model model_1 on rHV-2 predict time (includes compilation time, see --benchmark): 389.6s
+I0303 18:01:34.280547 139797198628672 run_docker.py:222] I0303 10:01:34.279441 140201575440768 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 64 (GLN) of chain 0>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 18:01:34.459637 139797198628672 run_docker.py:222] I0303 10:01:34.458909 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 1 of 100.
+I0303 18:01:34.840690 139797198628672 run_docker.py:222] I0303 10:01:34.839779 140201575440768 amber_minimize.py:69] Restraining 479 / 914 particles.
+I0303 18:01:38.350878 139797198628672 run_docker.py:222] I0303 10:01:38.349619 140201575440768 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 18:01:49.867865 139797198628672 run_docker.py:222] I0303 10:01:49.866426 140201575440768 amber_minimize.py:493] Iteration completed: Einit 3435.45 Efinal -498.48 Time 2.90 s num residue violations 0 num residue exclusions 0
+I0303 18:01:57.537530 139797198628672 run_docker.py:222] I0303 10:01:57.536214 140201575440768 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 64 (GLN) of chain 0>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 18:01:57.874815 139797198628672 run_docker.py:222] I0303 10:01:57.868873 140201575440768 run_alphafold.py:185] Running model model_2 on rHV-2
+I0303 18:02:00.276345 139797198628672 run_docker.py:222] I0303 10:02:00.275183 140201575440768 model.py:166] Running predict with shape(feat) = {'aatype': (4, 65), 'residue_index': (4, 65), 'seq_length': (4,), 'template_aatype': (4, 4, 65), 'template_all_atom_masks': (4, 4, 65, 37), 'template_all_atom_positions': (4, 4, 65, 37, 3), 'template_sum_probs': (4, 4, 1), 'is_distillation': (4,), 'seq_mask': (4, 65), 'msa_mask': (4, 508, 65), 'msa_row_mask': (4, 508), 'random_crop_to_size_seed': (4, 2), 'template_mask': (4, 4), 'template_pseudo_beta': (4, 4, 65, 3), 'template_pseudo_beta_mask': (4, 4, 65), 'atom14_atom_exists': (4, 65, 14), 'residx_atom14_to_atom37': (4, 65, 14), 'residx_atom37_to_atom14': (4, 65, 37), 'atom37_atom_exists': (4, 65, 37), 'extra_msa': (4, 1024, 65), 'extra_msa_mask': (4, 1024, 65), 'extra_msa_row_mask': (4, 1024), 'bert_mask': (4, 508, 65), 'true_msa': (4, 508, 65), 'extra_has_deletion': (4, 1024, 65), 'extra_deletion_value': (4, 1024, 65), 'msa_feat': (4, 508, 65, 49), 'target_feat': (4, 65, 22)}
+I0303 18:05:53.773401 139797198628672 run_docker.py:222] I0303 10:05:53.771974 140201575440768 model.py:176] Output shape was {'distogram': {'bin_edges': (63,), 'logits': (65, 65, 64)}, 'experimentally_resolved': {'logits': (65, 37)}, 'masked_msa': {'logits': (508, 65, 23)}, 'predicted_lddt': {'logits': (65, 50)}, 'structure_module': {'final_atom_mask': (65, 37), 'final_atom_positions': (65, 37, 3)}, 'plddt': (65,), 'ranking_confidence': ()}
+I0303 18:05:53.773824 139797198628672 run_docker.py:222] I0303 10:05:53.772661 140201575440768 run_alphafold.py:199] Total JAX model model_2 on rHV-2 predict time (includes compilation time, see --benchmark): 233.5s
+I0303 18:06:07.451077 139797198628672 run_docker.py:222] I0303 10:06:07.449974 140201575440768 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 64 (GLN) of chain 0>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 18:06:07.627480 139797198628672 run_docker.py:222] I0303 10:06:07.626619 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 1 of 100.
+I0303 18:06:07.971033 139797198628672 run_docker.py:222] I0303 10:06:07.970034 140201575440768 amber_minimize.py:69] Restraining 479 / 914 particles.
+I0303 18:06:11.741051 139797198628672 run_docker.py:222] I0303 10:06:11.739772 140201575440768 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 18:06:11.994751 139797198628672 run_docker.py:222] I0303 10:06:11.993848 140201575440768 amber_minimize.py:493] Iteration completed: Einit 2567.21 Efinal -502.16 Time 3.31 s num residue violations 0 num residue exclusions 0
+I0303 18:06:19.385427 139797198628672 run_docker.py:222] I0303 10:06:19.384055 140201575440768 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 64 (GLN) of chain 0>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 18:06:21.080256 139797198628672 run_docker.py:222] I0303 10:06:21.079317 140201575440768 run_alphafold.py:185] Running model model_3 on rHV-2
+I0303 18:06:23.064842 139797198628672 run_docker.py:222] I0303 10:06:23.063935 140201575440768 model.py:166] Running predict with shape(feat) = {'aatype': (4, 65), 'residue_index': (4, 65), 'seq_length': (4,), 'is_distillation': (4,), 'seq_mask': (4, 65), 'msa_mask': (4, 512, 65), 'msa_row_mask': (4, 512), 'random_crop_to_size_seed': (4, 2), 'atom14_atom_exists': (4, 65, 14), 'residx_atom14_to_atom37': (4, 65, 14), 'residx_atom37_to_atom14': (4, 65, 37), 'atom37_atom_exists': (4, 65, 37), 'extra_msa': (4, 5120, 65), 'extra_msa_mask': (4, 5120, 65), 'extra_msa_row_mask': (4, 5120), 'bert_mask': (4, 512, 65), 'true_msa': (4, 512, 65), 'extra_has_deletion': (4, 5120, 65), 'extra_deletion_value': (4, 5120, 65), 'msa_feat': (4, 512, 65, 49), 'target_feat': (4, 65, 22)}
+I0303 18:09:12.645922 139797198628672 run_docker.py:222] I0303 10:09:12.644480 140201575440768 model.py:176] Output shape was {'distogram': {'bin_edges': (63,), 'logits': (65, 65, 64)}, 'experimentally_resolved': {'logits': (65, 37)}, 'masked_msa': {'logits': (512, 65, 23)}, 'predicted_lddt': {'logits': (65, 50)}, 'structure_module': {'final_atom_mask': (65, 37), 'final_atom_positions': (65, 37, 3)}, 'plddt': (65,), 'ranking_confidence': ()}
+I0303 18:09:12.646314 139797198628672 run_docker.py:222] I0303 10:09:12.645199 140201575440768 run_alphafold.py:199] Total JAX model model_3 on rHV-2 predict time (includes compilation time, see --benchmark): 169.6s
+I0303 18:09:26.656763 139797198628672 run_docker.py:222] I0303 10:09:26.655509 140201575440768 amber_minimize.py:176] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 64 (GLN) of chain 0>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0303 18:09:26.816035 139797198628672 run_docker.py:222] I0303 10:09:26.815389 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 1 of 100.
+I0303 18:09:27.019766 139797198628672 run_docker.py:222] I0303 10:09:27.018950 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:27.020104 139797198628672 run_docker.py:222] I0303 10:09:27.019525 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 2 of 100.
+I0303 18:09:27.213542 139797198628672 run_docker.py:222] I0303 10:09:27.212659 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:27.213891 139797198628672 run_docker.py:222] I0303 10:09:27.213216 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 3 of 100.
+I0303 18:09:27.407737 139797198628672 run_docker.py:222] I0303 10:09:27.406759 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:27.408115 139797198628672 run_docker.py:222] I0303 10:09:27.407510 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 4 of 100.
+I0303 18:09:29.277546 139797198628672 run_docker.py:222] I0303 10:09:29.276398 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:29.277930 139797198628672 run_docker.py:222] I0303 10:09:29.277410 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 5 of 100.
+I0303 18:09:29.482427 139797198628672 run_docker.py:222] I0303 10:09:29.481596 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:29.482775 139797198628672 run_docker.py:222] I0303 10:09:29.482201 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 6 of 100.
+I0303 18:09:29.677351 139797198628672 run_docker.py:222] I0303 10:09:29.676376 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:29.677695 139797198628672 run_docker.py:222] I0303 10:09:29.677002 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 7 of 100.
+I0303 18:09:29.870440 139797198628672 run_docker.py:222] I0303 10:09:29.869645 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:29.870771 139797198628672 run_docker.py:222] I0303 10:09:29.870202 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 8 of 100.
+I0303 18:09:30.065200 139797198628672 run_docker.py:222] I0303 10:09:30.064382 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:30.065528 139797198628672 run_docker.py:222] I0303 10:09:30.064929 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 9 of 100.
+I0303 18:09:30.260888 139797198628672 run_docker.py:222] I0303 10:09:30.260010 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:30.261215 139797198628672 run_docker.py:222] I0303 10:09:30.260549 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 10 of 100.
+I0303 18:09:30.455670 139797198628672 run_docker.py:222] I0303 10:09:30.454810 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:30.456018 139797198628672 run_docker.py:222] I0303 10:09:30.455418 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 11 of 100.
+I0303 18:09:30.650846 139797198628672 run_docker.py:222] I0303 10:09:30.650043 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:30.651243 139797198628672 run_docker.py:222] I0303 10:09:30.650589 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 12 of 100.
+I0303 18:09:30.845709 139797198628672 run_docker.py:222] I0303 10:09:30.844823 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:30.846066 139797198628672 run_docker.py:222] I0303 10:09:30.845368 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 13 of 100.
+I0303 18:09:31.040353 139797198628672 run_docker.py:222] I0303 10:09:31.039458 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:31.040736 139797198628672 run_docker.py:222] I0303 10:09:31.040022 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 14 of 100.
+I0303 18:09:31.235206 139797198628672 run_docker.py:222] I0303 10:09:31.234307 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:31.235579 139797198628672 run_docker.py:222] I0303 10:09:31.234855 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 15 of 100.
+I0303 18:09:31.429744 139797198628672 run_docker.py:222] I0303 10:09:31.428979 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:31.430085 139797198628672 run_docker.py:222] I0303 10:09:31.429520 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 16 of 100.
+I0303 18:09:31.624097 139797198628672 run_docker.py:222] I0303 10:09:31.623298 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:31.624447 139797198628672 run_docker.py:222] I0303 10:09:31.623823 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 17 of 100.
+I0303 18:09:31.829236 139797198628672 run_docker.py:222] I0303 10:09:31.828351 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:31.829587 139797198628672 run_docker.py:222] I0303 10:09:31.828888 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 18 of 100.
+I0303 18:09:32.025815 139797198628672 run_docker.py:222] I0303 10:09:32.024900 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:32.026199 139797198628672 run_docker.py:222] I0303 10:09:32.025422 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 19 of 100.
+I0303 18:09:33.912172 139797198628672 run_docker.py:222] I0303 10:09:33.911143 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:33.912558 139797198628672 run_docker.py:222] I0303 10:09:33.911953 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 20 of 100.
+I0303 18:09:34.108242 139797198628672 run_docker.py:222] I0303 10:09:34.107354 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:34.108596 139797198628672 run_docker.py:222] I0303 10:09:34.107955 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 21 of 100.
+I0303 18:09:34.299901 139797198628672 run_docker.py:222] I0303 10:09:34.299114 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:34.300240 139797198628672 run_docker.py:222] I0303 10:09:34.299701 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 22 of 100.
+I0303 18:09:34.491348 139797198628672 run_docker.py:222] I0303 10:09:34.490405 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:34.491686 139797198628672 run_docker.py:222] I0303 10:09:34.490994 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 23 of 100.
+I0303 18:09:34.684741 139797198628672 run_docker.py:222] I0303 10:09:34.683840 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:34.685069 139797198628672 run_docker.py:222] I0303 10:09:34.684401 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 24 of 100.
+I0303 18:09:34.878360 139797198628672 run_docker.py:222] I0303 10:09:34.877579 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:34.878694 139797198628672 run_docker.py:222] I0303 10:09:34.878153 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 25 of 100.
+I0303 18:09:35.071938 139797198628672 run_docker.py:222] I0303 10:09:35.071062 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:35.072290 139797198628672 run_docker.py:222] I0303 10:09:35.071628 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 26 of 100.
+I0303 18:09:35.266098 139797198628672 run_docker.py:222] I0303 10:09:35.265167 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:35.266458 139797198628672 run_docker.py:222] I0303 10:09:35.265725 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 27 of 100.
+I0303 18:09:35.458575 139797198628672 run_docker.py:222] I0303 10:09:35.457650 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:35.458961 139797198628672 run_docker.py:222] I0303 10:09:35.458199 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 28 of 100.
+I0303 18:09:35.652217 139797198628672 run_docker.py:222] I0303 10:09:35.651419 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:35.652543 139797198628672 run_docker.py:222] I0303 10:09:35.651964 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 29 of 100.
+I0303 18:09:35.844178 139797198628672 run_docker.py:222] I0303 10:09:35.843291 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:35.844532 139797198628672 run_docker.py:222] I0303 10:09:35.843831 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 30 of 100.
+I0303 18:09:36.039533 139797198628672 run_docker.py:222] I0303 10:09:36.038635 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:36.039907 139797198628672 run_docker.py:222] I0303 10:09:36.039200 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 31 of 100.
+I0303 18:09:36.232126 139797198628672 run_docker.py:222] I0303 10:09:36.231315 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:36.232445 139797198628672 run_docker.py:222] I0303 10:09:36.231859 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 32 of 100.
+I0303 18:09:36.426085 139797198628672 run_docker.py:222] I0303 10:09:36.425236 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:36.426439 139797198628672 run_docker.py:222] I0303 10:09:36.425791 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 33 of 100.
+I0303 18:09:38.111768 139797198628672 run_docker.py:222] I0303 10:09:38.110799 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:38.112301 139797198628672 run_docker.py:222] I0303 10:09:38.111661 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 34 of 100.
+I0303 18:09:38.309661 139797198628672 run_docker.py:222] I0303 10:09:38.308877 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:38.310048 139797198628672 run_docker.py:222] I0303 10:09:38.309463 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 35 of 100.
+I0303 18:09:38.508118 139797198628672 run_docker.py:222] I0303 10:09:38.507268 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:38.508496 139797198628672 run_docker.py:222] I0303 10:09:38.507887 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 36 of 100.
+I0303 18:09:38.700444 139797198628672 run_docker.py:222] I0303 10:09:38.699698 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:38.700777 139797198628672 run_docker.py:222] I0303 10:09:38.700271 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 37 of 100.
+I0303 18:09:38.891722 139797198628672 run_docker.py:222] I0303 10:09:38.890898 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:38.892067 139797198628672 run_docker.py:222] I0303 10:09:38.891479 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 38 of 100.
+I0303 18:09:39.088269 139797198628672 run_docker.py:222] I0303 10:09:39.087420 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:39.088614 139797198628672 run_docker.py:222] I0303 10:09:39.088030 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 39 of 100.
+I0303 18:09:39.280694 139797198628672 run_docker.py:222] I0303 10:09:39.279901 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:39.281071 139797198628672 run_docker.py:222] I0303 10:09:39.280446 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 40 of 100.
+I0303 18:09:39.474181 139797198628672 run_docker.py:222] I0303 10:09:39.473283 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:39.474567 139797198628672 run_docker.py:222] I0303 10:09:39.473863 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 41 of 100.
+I0303 18:09:39.666562 139797198628672 run_docker.py:222] I0303 10:09:39.665700 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:39.666882 139797198628672 run_docker.py:222] I0303 10:09:39.666247 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 42 of 100.
+I0303 18:09:39.859380 139797198628672 run_docker.py:222] I0303 10:09:39.858512 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:39.859705 139797198628672 run_docker.py:222] I0303 10:09:39.859093 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 43 of 100.
+I0303 18:09:40.051321 139797198628672 run_docker.py:222] I0303 10:09:40.050557 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:40.051638 139797198628672 run_docker.py:222] I0303 10:09:40.051123 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 44 of 100.
+I0303 18:09:40.244967 139797198628672 run_docker.py:222] I0303 10:09:40.244084 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:40.245288 139797198628672 run_docker.py:222] I0303 10:09:40.244783 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 45 of 100.
+I0303 18:09:40.436615 139797198628672 run_docker.py:222] I0303 10:09:40.435867 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:40.436924 139797198628672 run_docker.py:222] I0303 10:09:40.436418 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 46 of 100.
+I0303 18:09:40.629285 139797198628672 run_docker.py:222] I0303 10:09:40.628521 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:40.629610 139797198628672 run_docker.py:222] I0303 10:09:40.629072 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 47 of 100.
+I0303 18:09:42.370391 139797198628672 run_docker.py:222] I0303 10:09:42.369392 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:42.370782 139797198628672 run_docker.py:222] I0303 10:09:42.370062 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 48 of 100.
+I0303 18:09:42.565395 139797198628672 run_docker.py:222] I0303 10:09:42.564588 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:42.565719 139797198628672 run_docker.py:222] I0303 10:09:42.565158 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 49 of 100.
+I0303 18:09:42.758156 139797198628672 run_docker.py:222] I0303 10:09:42.757300 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:42.758489 139797198628672 run_docker.py:222] I0303 10:09:42.757854 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 50 of 100.
+I0303 18:09:42.949704 139797198628672 run_docker.py:222] I0303 10:09:42.948893 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:42.950040 139797198628672 run_docker.py:222] I0303 10:09:42.949489 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 51 of 100.
+I0303 18:09:43.141914 139797198628672 run_docker.py:222] I0303 10:09:43.141009 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:43.142275 139797198628672 run_docker.py:222] I0303 10:09:43.141575 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 52 of 100.
+I0303 18:09:43.332860 139797198628672 run_docker.py:222] I0303 10:09:43.331918 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:43.333240 139797198628672 run_docker.py:222] I0303 10:09:43.332472 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 53 of 100.
+I0303 18:09:43.523538 139797198628672 run_docker.py:222] I0303 10:09:43.522764 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:43.523862 139797198628672 run_docker.py:222] I0303 10:09:43.523339 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 54 of 100.
+I0303 18:09:43.717270 139797198628672 run_docker.py:222] I0303 10:09:43.716448 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:43.717591 139797198628672 run_docker.py:222] I0303 10:09:43.717006 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 55 of 100.
+I0303 18:09:43.910067 139797198628672 run_docker.py:222] I0303 10:09:43.909203 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:43.910420 139797198628672 run_docker.py:222] I0303 10:09:43.909749 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 56 of 100.
+I0303 18:09:44.102478 139797198628672 run_docker.py:222] I0303 10:09:44.101676 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:44.102854 139797198628672 run_docker.py:222] I0303 10:09:44.102238 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 57 of 100.
+I0303 18:09:44.297153 139797198628672 run_docker.py:222] I0303 10:09:44.296416 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:44.297489 139797198628672 run_docker.py:222] I0303 10:09:44.296970 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 58 of 100.
+I0303 18:09:44.490580 139797198628672 run_docker.py:222] I0303 10:09:44.489742 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:44.490940 139797198628672 run_docker.py:222] I0303 10:09:44.490295 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 59 of 100.
+I0303 18:09:44.683135 139797198628672 run_docker.py:222] I0303 10:09:44.682214 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:44.683512 139797198628672 run_docker.py:222] I0303 10:09:44.682762 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 60 of 100.
+I0303 18:09:44.875724 139797198628672 run_docker.py:222] I0303 10:09:44.875023 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:44.876048 139797198628672 run_docker.py:222] I0303 10:09:44.875569 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 61 of 100.
+I0303 18:09:45.068842 139797198628672 run_docker.py:222] I0303 10:09:45.068070 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:45.069161 139797198628672 run_docker.py:222] I0303 10:09:45.068623 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 62 of 100.
+I0303 18:09:46.649114 139797198628672 run_docker.py:222] I0303 10:09:46.648119 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:46.649503 139797198628672 run_docker.py:222] I0303 10:09:46.648922 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 63 of 100.
+I0303 18:09:46.845220 139797198628672 run_docker.py:222] I0303 10:09:46.844432 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:46.845553 139797198628672 run_docker.py:222] I0303 10:09:46.845007 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 64 of 100.
+I0303 18:09:47.037279 139797198628672 run_docker.py:222] I0303 10:09:47.036454 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:47.037613 139797198628672 run_docker.py:222] I0303 10:09:47.037009 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 65 of 100.
+I0303 18:09:47.231114 139797198628672 run_docker.py:222] I0303 10:09:47.230321 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:47.231442 139797198628672 run_docker.py:222] I0303 10:09:47.230880 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 66 of 100.
+I0303 18:09:47.425725 139797198628672 run_docker.py:222] I0303 10:09:47.424891 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:47.426048 139797198628672 run_docker.py:222] I0303 10:09:47.425438 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 67 of 100.
+I0303 18:09:47.621063 139797198628672 run_docker.py:222] I0303 10:09:47.620170 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:47.621432 139797198628672 run_docker.py:222] I0303 10:09:47.620727 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 68 of 100.
+I0303 18:09:47.813723 139797198628672 run_docker.py:222] I0303 10:09:47.812880 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:47.814090 139797198628672 run_docker.py:222] I0303 10:09:47.813445 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 69 of 100.
+I0303 18:09:48.007447 139797198628672 run_docker.py:222] I0303 10:09:48.006566 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:48.007831 139797198628672 run_docker.py:222] I0303 10:09:48.007134 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 70 of 100.
+I0303 18:09:48.201424 139797198628672 run_docker.py:222] I0303 10:09:48.200471 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:48.201808 139797198628672 run_docker.py:222] I0303 10:09:48.201018 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 71 of 100.
+I0303 18:09:48.405692 139797198628672 run_docker.py:222] I0303 10:09:48.404859 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:48.406057 139797198628672 run_docker.py:222] I0303 10:09:48.405416 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 72 of 100.
+I0303 18:09:48.598642 139797198628672 run_docker.py:222] I0303 10:09:48.597794 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:48.599058 139797198628672 run_docker.py:222] I0303 10:09:48.598339 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 73 of 100.
+I0303 18:09:48.791575 139797198628672 run_docker.py:222] I0303 10:09:48.790717 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:48.791965 139797198628672 run_docker.py:222] I0303 10:09:48.791266 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 74 of 100.
+I0303 18:09:48.983575 139797198628672 run_docker.py:222] I0303 10:09:48.982778 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:48.983900 139797198628672 run_docker.py:222] I0303 10:09:48.983327 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 75 of 100.
+I0303 18:09:49.179374 139797198628672 run_docker.py:222] I0303 10:09:49.178503 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:49.179724 139797198628672 run_docker.py:222] I0303 10:09:49.179120 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 76 of 100.
+I0303 18:09:49.372691 139797198628672 run_docker.py:222] I0303 10:09:49.371928 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:49.373030 139797198628672 run_docker.py:222] I0303 10:09:49.372467 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 77 of 100.
+I0303 18:09:51.075427 139797198628672 run_docker.py:222] I0303 10:09:51.074458 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:51.075810 139797198628672 run_docker.py:222] I0303 10:09:51.075329 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 78 of 100.
+I0303 18:09:51.269149 139797198628672 run_docker.py:222] I0303 10:09:51.268366 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:51.269492 139797198628672 run_docker.py:222] I0303 10:09:51.268940 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 79 of 100.
+I0303 18:09:51.462683 139797198628672 run_docker.py:222] I0303 10:09:51.461930 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:51.463058 139797198628672 run_docker.py:222] I0303 10:09:51.462489 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 80 of 100.
+I0303 18:09:51.656843 139797198628672 run_docker.py:222] I0303 10:09:51.656053 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:51.657177 139797198628672 run_docker.py:222] I0303 10:09:51.656643 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 81 of 100.
+I0303 18:09:51.850239 139797198628672 run_docker.py:222] I0303 10:09:51.849502 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:51.850567 139797198628672 run_docker.py:222] I0303 10:09:51.850065 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 82 of 100.
+I0303 18:09:52.043601 139797198628672 run_docker.py:222] I0303 10:09:52.042806 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:52.043923 139797198628672 run_docker.py:222] I0303 10:09:52.043359 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 83 of 100.
+I0303 18:09:52.235900 139797198628672 run_docker.py:222] I0303 10:09:52.235138 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:52.236225 139797198628672 run_docker.py:222] I0303 10:09:52.235719 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 84 of 100.
+I0303 18:09:52.428548 139797198628672 run_docker.py:222] I0303 10:09:52.427757 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:52.428876 139797198628672 run_docker.py:222] I0303 10:09:52.428317 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 85 of 100.
+I0303 18:09:52.622080 139797198628672 run_docker.py:222] I0303 10:09:52.621292 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:52.622398 139797198628672 run_docker.py:222] I0303 10:09:52.621862 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 86 of 100.
+I0303 18:09:52.814174 139797198628672 run_docker.py:222] I0303 10:09:52.813413 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:52.814498 139797198628672 run_docker.py:222] I0303 10:09:52.813969 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 87 of 100.
+I0303 18:09:53.006139 139797198628672 run_docker.py:222] I0303 10:09:53.005350 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:53.006461 139797198628672 run_docker.py:222] I0303 10:09:53.005904 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 88 of 100.
+I0303 18:09:53.197461 139797198628672 run_docker.py:222] I0303 10:09:53.196697 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:53.197779 139797198628672 run_docker.py:222] I0303 10:09:53.197242 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 89 of 100.
+I0303 18:09:53.389976 139797198628672 run_docker.py:222] I0303 10:09:53.389169 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:53.390298 139797198628672 run_docker.py:222] I0303 10:09:53.389719 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 90 of 100.
+I0303 18:09:53.581263 139797198628672 run_docker.py:222] I0303 10:09:53.580494 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:53.581580 139797198628672 run_docker.py:222] I0303 10:09:53.581033 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 91 of 100.
+I0303 18:09:55.241217 139797198628672 run_docker.py:222] I0303 10:09:55.240260 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:55.241603 139797198628672 run_docker.py:222] I0303 10:09:55.240916 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 92 of 100.
+I0303 18:09:55.434127 139797198628672 run_docker.py:222] I0303 10:09:55.433325 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:55.434463 139797198628672 run_docker.py:222] I0303 10:09:55.433884 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 93 of 100.
+I0303 18:09:55.624093 139797198628672 run_docker.py:222] I0303 10:09:55.623293 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:55.624423 139797198628672 run_docker.py:222] I0303 10:09:55.623841 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 94 of 100.
+I0303 18:09:55.820547 139797198628672 run_docker.py:222] I0303 10:09:55.819612 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:55.821141 139797198628672 run_docker.py:222] I0303 10:09:55.820659 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 95 of 100.
+I0303 18:09:56.020065 139797198628672 run_docker.py:222] I0303 10:09:56.019111 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:56.020448 139797198628672 run_docker.py:222] I0303 10:09:56.019753 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 96 of 100.
+I0303 18:09:56.209897 139797198628672 run_docker.py:222] I0303 10:09:56.209121 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:56.210242 139797198628672 run_docker.py:222] I0303 10:09:56.209674 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 97 of 100.
+I0303 18:09:56.402208 139797198628672 run_docker.py:222] I0303 10:09:56.401420 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:56.402539 139797198628672 run_docker.py:222] I0303 10:09:56.401966 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 98 of 100.
+I0303 18:09:56.595067 139797198628672 run_docker.py:222] I0303 10:09:56.594252 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:56.595399 139797198628672 run_docker.py:222] I0303 10:09:56.594810 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 99 of 100.
+I0303 18:09:56.788244 139797198628672 run_docker.py:222] I0303 10:09:56.787482 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:56.788568 139797198628672 run_docker.py:222] I0303 10:09:56.788029 140201575440768 amber_minimize.py:405] Minimizing protein, attempt 100 of 100.
+I0303 18:09:56.979661 139797198628672 run_docker.py:222] I0303 10:09:56.978875 140201575440768 amber_minimize.py:413] No template found for residue 28 (CYS).  The set of atoms matches CYM, but the bonds are different.
+I0303 18:09:57.016664 139797198628672 run_docker.py:222] Traceback (most recent call last):
+I0303 18:09:57.016916 139797198628672 run_docker.py:222] File "/app/alphafold/run_alphafold.py", line 427, in <module>
+I0303 18:09:57.017113 139797198628672 run_docker.py:222] app.run(main)
+I0303 18:09:57.017338 139797198628672 run_docker.py:222] File "/opt/conda/lib/python3.7/site-packages/absl/app.py", line 312, in run
+I0303 18:09:57.017519 139797198628672 run_docker.py:222] _run_main(main, args)
+I0303 18:09:57.017693 139797198628672 run_docker.py:222] File "/opt/conda/lib/python3.7/site-packages/absl/app.py", line 258, in _run_main
+I0303 18:09:57.017863 139797198628672 run_docker.py:222] sys.exit(main(argv))
+I0303 18:09:57.018031 139797198628672 run_docker.py:222] File "/app/alphafold/run_alphafold.py", line 412, in main
+I0303 18:09:57.018199 139797198628672 run_docker.py:222] is_prokaryote=is_prokaryote)
+I0303 18:09:57.018367 139797198628672 run_docker.py:222] File "/app/alphafold/run_alphafold.py", line 237, in predict_structure
+I0303 18:09:57.018533 139797198628672 run_docker.py:222] relaxed_pdb_str, _, _ = amber_relaxer.process(prot=unrelaxed_protein)
+I0303 18:09:57.018699 139797198628672 run_docker.py:222] File "/app/alphafold/alphafold/relax/relax.py", line 62, in process
+I0303 18:09:57.018866 139797198628672 run_docker.py:222] max_outer_iterations=self._max_outer_iterations)
+I0303 18:09:57.019074 139797198628672 run_docker.py:222] File "/app/alphafold/alphafold/relax/amber_minimize.py", line 476, in run_pipeline
+I0303 18:09:57.019248 139797198628672 run_docker.py:222] max_attempts=max_attempts)
+I0303 18:09:57.019416 139797198628672 run_docker.py:222] File "/app/alphafold/alphafold/relax/amber_minimize.py", line 415, in _run_one_iteration
+I0303 18:09:57.019583 139797198628672 run_docker.py:222] raise ValueError(f"Minimization failed after {max_attempts} attempts.")
+I0303 18:09:57.019748 139797198628672 run_docker.py:222] ValueError: Minimization failed after 100 attempts.

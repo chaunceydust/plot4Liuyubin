@@ -1,0 +1,27 @@
+# STOCKHOLM 1.0
+#=GF ID rHV-2-i1
+#=GF AU jackhmmer (HMMER 3.3)
+
+#=GS MGYP001007104053/90-128  DE [subseq from] PL=11 UP=0 BIOMES=1000000000000
+#=GS MGYP001007104053/227-265 DE [subseq from] PL=11 UP=0 BIOMES=1000000000000
+#=GS MGYP001007104053/296-334 DE [subseq from] PL=11 UP=0 BIOMES=1000000000000
+#=GS MGYP001007104053/505-543 DE [subseq from] PL=11 UP=0 BIOMES=1000000000000
+#=GS MGYP001007104053/642-680 DE [subseq from] PL=11 UP=0 BIOMES=1000000000000
+#=GS MGYP001007104053/711-749 DE [subseq from] PL=11 UP=0 BIOMES=1000000000000
+
+rHV-2                            ITYTDCTESGQNLCLCEGSNVCGKGNKCILGSNGKGNQCVTGEGTPKPESHNNGDFEEIPEEYLQ
+MGYP001007104053/90-128          ---PTCSITGGNFCYGNSTQLCAATNSAYLWSTGATTQCITV-----------------------
+#=GR MGYP001007104053/90-128  PP ...469999******************************994.......................
+MGYP001007104053/227-265         --TPNCAITGNNFCYGTSTQLCSAPNSSYLWSTGATTQCIT------------------------
+#=GR MGYP001007104053/227-265 PP ..5689*********************************98........................
+MGYP001007104053/296-334         ---PTCSITGGNFCYGNSTQLCAATNSAYLWSTGATTQCITV-----------------------
+#=GR MGYP001007104053/296-334 PP ...469999******************************994.......................
+MGYP001007104053/505-543         ---PTCSITGGNFCYGNSTQLCAATNSAYLWSTGATTQCITV-----------------------
+#=GR MGYP001007104053/505-543 PP ...469999******************************994.......................
+MGYP001007104053/642-680         --TPNCAITGNNFCYGTSTQLCSAPNSSYLWSTGATTQCIT------------------------
+#=GR MGYP001007104053/642-680 PP ..5689*********************************98........................
+MGYP001007104053/711-749         ---PTCSITGGNFCYGNSTQLCAATNSAYLWSTGATTQCITV-----------------------
+#=GR MGYP001007104053/711-749 PP ...469999******************************994.......................
+#=GC PP_cons                     ..5579999******************************994.......................
+#=GC RF                          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//

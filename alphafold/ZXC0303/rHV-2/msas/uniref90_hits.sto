@@ -1,0 +1,54 @@
+# STOCKHOLM 1.0
+#=GF ID rHV-2-i1
+#=GF AU jackhmmer (HMMER 3.3)
+
+#=GS UniRef90_UPI000002BD50/1-65 DE [subseq from] HIRUDIN VARIANT 2 n=1 Tax=Poecilobdella manillensis TaxID=1348078 RepID=UPI000002BD50
+#=GS UniRef90_P09945/8-72        DE [subseq from] Hirudin variant-2 (Fragment) n=3 Tax=Hirudo TaxID=6420 RepID=HIRV2_HIRME
+#=GS UniRef90_P28511/1-65        DE [subseq from] Hirudin-3B' n=9 Tax=Hirudinidae TaxID=6417 RepID=HIR3C_HIRME
+#=GS UniRef90_P01050/1-65        DE [subseq from] Hirudin variant-1 n=7 Tax=Hirudo medicinalis TaxID=6421 RepID=HIRV1_HIRME
+#=GS UniRef90_P28509/1-65        DE [subseq from] Hirudin-3 n=6 Tax=Hirudo TaxID=6420 RepID=HIR3_HIRME
+#=GS UniRef90_A0A0K2DRH4/21-82   DE [subseq from] Hirudin variant HV3(PA) n=7 Tax=Opisthokonta TaxID=33154 RepID=A0A0K2DRH4_9ANNE
+#=GS UniRef90_P09944/1-62        DE [subseq from] Hirudin-PA n=1 Tax=Hirudo medicinalis TaxID=6421 RepID=HIRPA_HIRME
+#=GS UniRef90_UPI00017539AF/1-62 DE [subseq from] Hirudin variant-1 n=1 Tax=Hirudo medicinalis TaxID=6421 RepID=UPI00017539AF
+#=GS UniRef90_P81492/21-81       DE [subseq from] Hirudin-HM2 n=1 Tax=Poecilobdella manillensis TaxID=1348078 RepID=HIRM2_POEMA
+#=GS UniRef90_Q07558/21-81       DE [subseq from] Hirudin-HM1 n=1 Tax=Poecilobdella manillensis TaxID=1348078 RepID=HIRM1_POEMA
+#=GS UniRef90_A0A1I9W214/13-73   DE [subseq from] Hirudin variant HM4 n=1 Tax=Poecilobdella manillensis TaxID=1348078 RepID=A0A1I9W214_POEMA
+#=GS UniRef90_P28512/2-62        DE [subseq from] Hirudin-P6 n=1 Tax=Poecilobdella manillensis TaxID=1348078 RepID=HIRP6_POEMA
+#=GS UniRef90_A0A1I9W213/13-70   DE [subseq from] Hirudin variant HM3 n=1 Tax=Poecilobdella manillensis TaxID=1348078 RepID=A0A1I9W213_POEMA
+#=GS UniRef90_A0A5B8NFC8/23-76   DE [subseq from] Hirudin n=1 Tax=Hirudo nipponia TaxID=42736 RepID=A0A5B8NFC8_HIRNI
+#=GS UniRef90_P26631/1-56        DE [subseq from] Hirullin-P18 n=1 Tax=Poecilobdella manillensis TaxID=1348078 RepID=HIR18_POEMA
+
+rHV-2                               ITYTDCTESGQNLCLCEGSNVCGKGNKCILGSNGKGNQCVTGEGTPKPESHNNGDFEEIPEEYLQ
+UniRef90_UPI000002BD50/1-65         ITYTDCTESGQNLCLCEGSNVCGKGNKCILGSNGKGNQCVTGEGTPKPESHNNGDFEEIPEEYLQ
+#=GR UniRef90_UPI000002BD50/1-65 PP 7**************************************************************98
+UniRef90_P09945/8-72                ITYTDCTESGQNLCLCEGSNVCGKGNKCILGSNGKGNQCVTGEGTPNPESHNNGDFEEIPEEYLQ
+#=GR UniRef90_P09945/8-72        PP 7**************************************************************98
+UniRef90_P28511/1-65                VVYTDCTESGQNLCLCQGSNVCGQGNKCILGSNGEKNQCVTGEGTPKPQSHNDGDFEEIPEEYLQ
+#=GR UniRef90_P28511/1-65        PP 58*************************************************************98
+UniRef90_P01050/1-65                VVYTDCTESGQNLCLCEGSNVCGQGNKCILGSDGEKNQCVTGEGTPKPQSHNDGDFEEIPEEYLQ
+#=GR UniRef90_P01050/1-65        PP 58*************************************************************98
+UniRef90_P28509/1-65                VVYTDCTESGQNLCLCEDSNVCGQGNKCILGSNGEKNQCVTGEGTPKPQSHNDGDFEEIPEEYLQ
+#=GR UniRef90_P28509/1-65        PP 58*************************************************************98
+UniRef90_A0A0K2DRH4/21-82           ITYTDCTESGQNLCLCEGSNVCGKGNKCILGSNGKDNQCVTGEGTPKPQSHNQGDFEPIPED---
+#=GR UniRef90_A0A0K2DRH4/21-82   PP 79**********************************************************97...
+UniRef90_P09944/1-62                ITYTDCTESGQNLCLCEGSNVCGKGNKCILGSQGKDNQCVTGEGTPKPQSHNQGDFEPIPED---
+#=GR UniRef90_P09944/1-62        PP 7***********************************************************97...
+UniRef90_UPI00017539AF/1-62         VVYTDCTESGQNLCLCEGSNVCGQGNKCILGRGDSKNQCVTGEGTPKPQSHNQGDFEPIPED---
+#=GR UniRef90_UPI00017539AF/1-62 PP 58**********************************************************97...
+UniRef90_P81492/21-81               VSYTDCTESGQNYCLCVGSNVCGEGKNCQLSSS--GNQCVHGEGTPKPKSQTEGDFEEIPDED--
+#=GR UniRef90_P81492/21-81       PP 68****************************986..7************************985..
+UniRef90_Q07558/21-81               VSYTDCTESGQNYCLCVGGNLCGGGKHCEM--DGSGNKCVDGEGTPKPKSQTEGDFEEIPDED--
+#=GR UniRef90_Q07558/21-81       PP 68**************************87..799*************************985..
+UniRef90_A0A1I9W214/13-73           VSYSGCTKSGQNYCLCVGSNVCGDGKNCQLNS--SGNQCVDGEGTPKPKSQTEDDFEEIPDEE--
+#=GR UniRef90_A0A1I9W214/13-73   PP 689*************************9966..68************************986..
+UniRef90_P28512/2-62                -RYTACTESGQNQCICEGNDVCGQGRNCQFDSSGK--KCVEGEGTRKPQNEGQHDFDPIPEEYL-
+#=GR UniRef90_P28512/2-62        PP .69**************************999876..8*************************9.
+UniRef90_A0A1I9W213/13-70           VSYTDCTESDQNYCLCENGNLCGEGKKCQL--NDSGNKCVVGKGTPKRQTPGPNDFDEIP-----
+#=GR UniRef90_A0A1I9W213/13-70   PP 68**************************98..6679***********************9.....
+UniRef90_A0A5B8NFC8/23-76           --YSVCTETGQNLCLCEGSDLCSLDNHCEIGSNGK-NRCVKGEGKPKKPQS-NSDLPE-------
+#=GR UniRef90_A0A5B8NFC8/23-76   PP ..899*****************************9.89********85443.344332.......
+UniRef90_P26631/1-56                VSYTDCT-SGQNYCLC-GGNFCGDGKHCEM--DGSENKCVDGEGTPKRQTSGPSDFEEFS-----
+#=GR UniRef90_P26631/1-56        PP 68****9.8*******.669********87..6899*********************975.....
+#=GC PP_cons                        68***************************9999999*********************9**99898
+#=GC RF                             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//
