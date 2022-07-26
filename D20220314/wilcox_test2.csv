@@ -1,0 +1,181 @@
+INDEX,Group,.y.,group1,group2,n1,n2,statistic,df,p,p.adj,p.adj.signif,batch,p.scient
+APTT,low dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-1.9279740109048915,13.833187423352896,0.075,1,ns,1,7.5e-02
+APTT,low dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-1.7195388069082878,13.988199811872878,0.108,1,ns,2,1.1e-01
+APTT,low dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-1.8009396437079461,12.879382485167655,0.095,1,ns,3,9.5e-02
+APTT,low dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-2.380098671198295,13.013847923252701,0.033,0.666,ns,4,3.3e-02
+APTT,low dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-0.9258864884710617,11.99464197061659,0.373,1,ns,5,3.7e-01
+APTT,low dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.1645292559369727,12.603076289314226,0.872,1,ns,6,8.7e-01
+D-Dimer,low dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.47316022340738356,13.907734902644853,0.643,1,ns,1,6.4e-01
+D-Dimer,low dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0.24915607825268693,12.660341957178545,0.807,1,ns,2,8.1e-01
+D-Dimer,low dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-0.3411591251800059,12.436267814304706,0.739,1,ns,3,7.4e-01
+D-Dimer,low dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-1.0702188992091646,12.417429066690996,0.305,1,ns,4,3.0e-01
+D-Dimer,low dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-1.0059312501122575,10.086934372267002,0.338,1,ns,5,3.4e-01
+D-Dimer,low dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-1.3163555737097672,9.05201054779443,0.22,1,ns,6,2.2e-01
+FIB,low dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-0.7211052303135645,12.36128555301194,0.484,1,ns,1,4.8e-01
+FIB,low dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-0.05386535897769653,13.987336782285766,0.958,1,ns,2,9.6e-01
+FIB,low dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-0.6226505827697042,13.802310947630861,0.544,1,ns,3,5.4e-01
+FIB,low dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-1.5802599465999576,13.958240865845836,0.136,1,ns,4,1.4e-01
+FIB,low dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-2.011544591734197,13.058808610377202,0.065,1,ns,5,6.5e-02
+FIB,low dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-1.6291579719691665,13.503161102146864,0.126,1,ns,6,1.3e-01
+FIIa,low dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.8940138633012459,13.904698197240744,0.387,1,ns,1,3.9e-01
+FIIa,low dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0.4861866543706648,13.563673104094283,0.635,1,ns,2,6.4e-01
+FIIa,low dose group,Result,30min before ivdrip,24h after ivdrip,8,8,0.5454020995374516,12.541802691494016,0.595,1,ns,3,5.9e-01
+FIIa,low dose group,Result,30min before ivdrip,72h after ivdrip,8,8,0.2419491420387275,13.551586058103883,0.812,1,ns,4,8.1e-01
+FIIa,low dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-0.8148115557763246,13.926093073421544,0.429,1,ns,5,4.3e-01
+FIIa,low dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.5252419008870037,12.84262575895394,0.608,1,ns,6,6.1e-01
+FXa,low dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.02283673840243071,13.980061190727225,0.982,1,ns,1,9.8e-01
+FXa,low dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0.019549684430530456,13.977900415427044,0.985,1,ns,2,9.8e-01
+FXa,low dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-0.1467294925223552,13.94742008863567,0.885,1,ns,3,8.8e-01
+FXa,low dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-0.14340955771002015,13.92161028262203,0.888,1,ns,4,8.9e-01
+FXa,low dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-0.4678500484586949,13.970130799530455,0.647,1,ns,5,6.5e-01
+FXa,low dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.11687234881464655,13.954262921773871,0.909,1,ns,6,9.1e-01
+FXIa,low dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.913880766094034,13.88340161077179,0.376,1,ns,1,3.8e-01
+FXIa,low dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0.07425820977645442,13.994799355811015,0.942,1,ns,2,9.4e-01
+FXIa,low dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-0.07804770061597813,13.441701737078816,0.939,1,ns,3,9.4e-01
+FXIa,low dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-1.3161607992889355,13.868260170005218,0.209,1,ns,4,2.1e-01
+FXIa,low dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-0.7756688660998737,13.72710818015989,0.451,1,ns,5,4.5e-01
+FXIa,low dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.43737854173096824,13.789907456902313,0.669,1,ns,6,6.7e-01
+INR,low dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-0.8334605500859701,11.097182448036959,0.422,1,ns,1,4.2e-01
+INR,low dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-2.140085907112676,13.614213784403706,0.051,1,ns,2,5.1e-02
+INR,low dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-0.47582873247891405,9.291032761655513,0.645,1,ns,3,6.4e-01
+INR,low dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-0.8539352558633946,9.770088086957868,0.414,1,ns,4,4.1e-01
+INR,low dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-0.22035179439885583,11.163716894325074,0.83,1,ns,5,8.3e-01
+INR,low dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.4223795258789951,10.186799010614198,0.682,1,ns,6,6.8e-01
+PT,low dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-0.7745966692414854,11.157293624403637,0.455,1,ns,1,4.6e-01
+PT,low dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-2.100347193521429,13.574329300368221,0.055,1,ns,2,5.5e-02
+PT,low dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-0.4311942274786203,9.38211688419997,0.676,1,ns,3,6.8e-01
+PT,low dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-0.7888246614208081,9.927842435093998,0.449,1,ns,4,4.5e-01
+PT,low dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-0.1840347322088504,11.10356230324747,0.857,1,ns,5,8.6e-01
+PT,low dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.3905667329424725,10.135937247977452,0.704,1,ns,6,7.0e-01
+PTA,low dose group,Result,30min before ivdrip,1h after ivdrip,8,8,1.0357755092859064,11.744327337022074,0.321,1,ns,1,3.2e-01
+PTA,low dose group,Result,30min before ivdrip,2h after ivdrip,8,8,2.3130755438025754,13.9822109564042,0.036,0.766,ns,2,3.6e-02
+PTA,low dose group,Result,30min before ivdrip,24h after ivdrip,8,8,0.3047441359425583,10.461931615129302,0.767,1,ns,3,7.7e-01
+PTA,low dose group,Result,30min before ivdrip,72h after ivdrip,8,8,0.715885732986403,10.252377442163434,0.49,1,ns,4,4.9e-01
+PTA,low dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,0.11984430354239595,11.921568445129935,0.907,1,ns,5,9.1e-01
+PTA,low dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,0.1865979638737118,10.848965598516783,0.855,1,ns,6,8.5e-01
+TT,low dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-6.324004556804447,10.962398837754142,5.73e-5,0.001,**,1,5.7e-05
+TT,low dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-5.460802931532603,9.481417109180567,3.33e-4,0.006,**,2,3.3e-04
+TT,low dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-4.7106828174578315,8.781377145042779,0.001,0.02,*,3,1.0e-03
+TT,low dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-4.6613084323942395,9.078974072663403,0.001,0.02,*,4,1.0e-03
+TT,low dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-1.8893428369903973,11.518687501655558,0.084,0.759,ns,5,8.4e-02
+TT,low dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.42462549867820704,12.240842452532695,0.678,1,ns,6,6.8e-01
+APTT,middle dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-1.4375422219004519,13.26564292932899,0.174,1,ns,1,1.7e-01
+APTT,middle dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-1.4831906889069777,13.367885025620698,0.161,1,ns,2,1.6e-01
+APTT,middle dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-0.995675894179958,12.703435567491708,0.338,1,ns,3,3.4e-01
+APTT,middle dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-1.6233260858046392,13.973773977138539,0.127,1,ns,4,1.3e-01
+APTT,middle dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,0.0059921998085853195,13.441544722353228,0.995,1,ns,5,9.9e-01
+APTT,middle dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,0.9023446579089093,13.475707620158616,0.383,1,ns,6,3.8e-01
+D-Dimer,middle dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.23702079050290092,12.91461105748615,0.816,1,ns,1,8.2e-01
+D-Dimer,middle dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0.48021621597486447,13.040303682379765,0.639,1,ns,2,6.4e-01
+D-Dimer,middle dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-1.0354291881254576,7.577126618098258,0.332,1,ns,3,3.3e-01
+D-Dimer,middle dose group,Result,30min before ivdrip,72h after ivdrip,8,8,0.2512506675571546,13.450723543892707,0.805,1,ns,4,8.0e-01
+D-Dimer,middle dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,0.32682281633459304,12.561178664955152,0.749,1,ns,5,7.5e-01
+D-Dimer,middle dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.2137287512660002,11.226620439837692,0.835,1,ns,6,8.3e-01
+FIB,middle dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-0.011013950836348638,13.598843904862825,0.991,1,ns,1,9.9e-01
+FIB,middle dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0.34611429130087973,13.973838038087356,0.734,1,ns,2,7.3e-01
+FIB,middle dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-0.09101724940329833,13.195216797170252,0.929,1,ns,3,9.3e-01
+FIB,middle dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-0.705515393840845,13.173951300409671,0.493,1,ns,4,4.9e-01
+FIB,middle dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-1.304138182866095,13.282354264440636,0.214,1,ns,5,2.1e-01
+FIB,middle dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-1.0719128096728292,13.407355119039957,0.303,1,ns,6,3.0e-01
+FIIa,middle dose group,Result,30min before ivdrip,1h after ivdrip,8,8,1.0369990000371598,13.74638311168833,0.318,1,ns,1,3.2e-01
+FIIa,middle dose group,Result,30min before ivdrip,2h after ivdrip,8,8,1.4249138938081642,11.811118530390068,0.18,1,ns,2,1.8e-01
+FIIa,middle dose group,Result,30min before ivdrip,24h after ivdrip,8,8,0.8485179138986231,13.766760076815332,0.411,1,ns,3,4.1e-01
+FIIa,middle dose group,Result,30min before ivdrip,72h after ivdrip,8,8,0.8649664680624115,13.846964347166566,0.402,1,ns,4,4.0e-01
+FIIa,middle dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-0.7139993115009988,13.746383111688338,0.487,1,ns,5,4.9e-01
+FIIa,middle dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.6532118003217701,10.166151714375475,0.528,1,ns,6,5.3e-01
+FXa,middle dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.0811491337928279,13.998527888548939,0.936,1,ns,1,9.4e-01
+FXa,middle dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0,13.284978912924656,1,1,ns,2,1.0e+00
+FXa,middle dose group,Result,30min before ivdrip,24h after ivdrip,8,8,0.002594593407629214,13.856265741097035,0.998,1,ns,3,1.0e+00
+FXa,middle dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-0.45431111920544825,11.364040765999123,0.658,1,ns,4,6.6e-01
+FXa,middle dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-1.1359137732145799,10.662499702034232,0.281,1,ns,5,2.8e-01
+FXa,middle dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-1.425864092012459,13.850007927981462,0.176,1,ns,6,1.8e-01
+FXIa,middle dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.9146727466415557,10.975593902492951,0.38,1,ns,1,3.8e-01
+FXIa,middle dose group,Result,30min before ivdrip,2h after ivdrip,8,8,2.008850155817179,13.71362611090141,0.065,1,ns,2,6.5e-02
+FXIa,middle dose group,Result,30min before ivdrip,24h after ivdrip,8,8,0.052968835990629924,9.410517192780086,0.959,1,ns,3,9.6e-01
+FXIa,middle dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-0.31292317827731214,8.681760751812712,0.762,1,ns,4,7.6e-01
+FXIa,middle dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-0.9074778168635645,8.723169242306636,0.389,1,ns,5,3.9e-01
+FXIa,middle dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-1.05127614754551,8.314679785510934,0.323,1,ns,6,3.2e-01
+INR,middle dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-0.7680194179259198,12.219077824489185,0.457,1,ns,1,4.6e-01
+INR,middle dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-1.3263286045887053,12.89786433646554,0.208,1,ns,2,2.1e-01
+INR,middle dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-1.615128350120507,13.981773020466742,0.129,1,ns,3,1.3e-01
+INR,middle dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-0.26733702845638935,13.891235927795801,0.793,1,ns,4,7.9e-01
+INR,middle dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,2.5267961652166266,9.012599004224567,0.032,0.454,ns,5,3.2e-02
+INR,middle dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,2.1037740960996727,13.965585935787713,0.054,0.648,ns,6,5.4e-02
+PT,middle dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-0.7294955398698858,12.447783123070108,0.479,1,ns,1,4.8e-01
+PT,middle dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-1.3004903566675317,13.102352246859452,0.216,1,ns,2,2.2e-01
+PT,middle dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-1.5943171837584489,13.99987391709348,0.133,1,ns,3,1.3e-01
+PT,middle dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-0.22610781582306727,13.797197512960132,0.824,1,ns,4,8.2e-01
+PT,middle dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,2.6042527843589762,9.100710165126456,0.028,0.424,ns,5,2.8e-02
+PT,middle dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,2.188714178072375,13.996161945046866,0.046,0.553,ns,6,4.6e-02
+PTA,middle dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.9386793281621157,12.252771239032747,0.366,1,ns,1,3.7e-01
+PTA,middle dose group,Result,30min before ivdrip,2h after ivdrip,8,8,1.5308839103587761,12.171198447175797,0.151,1,ns,2,1.5e-01
+PTA,middle dose group,Result,30min before ivdrip,24h after ivdrip,8,8,1.8045729784113607,13.775961835389145,0.093,1,ns,3,9.3e-02
+PTA,middle dose group,Result,30min before ivdrip,72h after ivdrip,8,8,0.25169111285381685,13.836817289596697,0.805,1,ns,4,8.0e-01
+PTA,middle dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-2.659625298751339,9.777111810882563,0.024,0.342,ns,5,2.4e-02
+PTA,middle dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-2.1146556572556716,13.084065366718098,0.054,0.65,ns,6,5.4e-02
+TT,middle dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-9.805188363255956,8.046623786258564,9.44e-6,1.42e-4,***,1,9.4e-06
+TT,middle dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-7.913196385961967,7.643450773520916,6.08e-5,7.9e-4,***,2,6.1e-05
+TT,middle dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-14.095934132296522,8.273549739944812,4.5e-7,8.1e-6,****,3,4.5e-07
+TT,middle dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-14.275179535108501,8.27783850936842,4.05e-7,7.7e-6,****,4,4.0e-07
+TT,middle dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-5.8588908642835165,8.884506744920092,2.53e-4,0.003,**,5,2.5e-04
+TT,middle dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-2.478062594816106,11.355749963000477,0.03,0.194,ns,6,3.0e-02
+APTT,high dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-4.564110432333552,13.662928479296742,4.69e-4,0.008,**,1,4.7e-04
+APTT,high dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-4.454639611451937,13.052486671839407,6.43e-4,0.01,*,2,6.4e-04
+APTT,high dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-5.840951602223162,12.418916285728011,6.93e-5,0.001,**,3,6.9e-05
+APTT,high dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-5.892344924167799,11.716410371106315,8.09e-5,0.002,**,4,8.1e-05
+APTT,high dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-1.6206528820031247,11.226715160319069,0.133,0.821,ns,5,1.3e-01
+APTT,high dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.8142192656580983,13.090611639516508,0.43,1,ns,6,4.3e-01
+D-Dimer,high dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.30829615222296197,13.997846073135925,0.762,1,ns,1,7.6e-01
+D-Dimer,high dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0.03360785171134608,13.99090658608188,0.974,1,ns,2,9.7e-01
+D-Dimer,high dose group,Result,30min before ivdrip,24h after ivdrip,8,8,0.033140573903601596,13.96165807167204,0.974,1,ns,3,9.7e-01
+D-Dimer,high dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-0.07745922430127451,13.598927218838709,0.939,1,ns,4,9.4e-01
+D-Dimer,high dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-0.4823370930778072,12.805305242803325,0.638,1,ns,5,6.4e-01
+D-Dimer,high dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.8064216438732111,13.855096452776047,0.434,1,ns,6,4.3e-01
+FIB,high dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-0.2795731210942954,13.42109607274806,0.784,1,ns,1,7.8e-01
+FIB,high dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-0.21687575022227096,13.919004111488285,0.831,1,ns,2,8.3e-01
+FIB,high dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-0.9496305332005901,13.944041039171855,0.358,1,ns,3,3.6e-01
+FIB,high dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-1.5673914029137765,13.981896686535311,0.139,1,ns,4,1.4e-01
+FIB,high dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-1.8237309779907265,13.856807907539777,0.09,1,ns,5,9.0e-02
+FIB,high dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-1.2571037773650457,13.386874821280744,0.23,1,ns,6,2.3e-01
+FIIa,high dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.6250788730287151,13.994582593694943,0.542,1,ns,1,5.4e-01
+FIIa,high dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0.5153039634219612,13.98173452397885,0.614,1,ns,2,6.1e-01
+FIIa,high dose group,Result,30min before ivdrip,24h after ivdrip,8,8,0.8644165404146492,13.897472671493166,0.402,1,ns,3,4.0e-01
+FIIa,high dose group,Result,30min before ivdrip,72h after ivdrip,8,8,0.5734140824499622,13.9820767783524,0.575,1,ns,4,5.7e-01
+FIIa,high dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-0.4961193983860196,13.719778618057312,0.628,1,ns,5,6.3e-01
+FIIa,high dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.22289030554059855,13.729070146648201,0.827,1,ns,6,8.3e-01
+FXa,high dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.13480829058140548,13.931757732600133,0.895,1,ns,1,9.0e-01
+FXa,high dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0.15953552524657771,13.926488545879545,0.876,1,ns,2,8.8e-01
+FXa,high dose group,Result,30min before ivdrip,24h after ivdrip,8,8,0.1863605582190417,13.996929871939372,0.855,1,ns,3,8.5e-01
+FXa,high dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-0.17194709952376114,13.960492420903503,0.866,1,ns,4,8.7e-01
+FXa,high dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-0.7868921971123054,13.995246763226172,0.444,1,ns,5,4.4e-01
+FXa,high dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.534361957008524,13.996412085464383,0.601,1,ns,6,6.0e-01
+FXIa,high dose group,Result,30min before ivdrip,1h after ivdrip,8,8,0.262790964831319,13.77591024932082,0.797,1,ns,1,8.0e-01
+FXIa,high dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0.6831681506801132,13.762085848821634,0.506,1,ns,2,5.1e-01
+FXIa,high dose group,Result,30min before ivdrip,24h after ivdrip,8,8,0.6519561597276105,13.303068278018277,0.526,1,ns,3,5.3e-01
+FXIa,high dose group,Result,30min before ivdrip,72h after ivdrip,8,8,0.35396567275273444,13.912858847558084,0.729,1,ns,4,7.3e-01
+FXIa,high dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-1.021526762682676,13.072934767747604,0.326,1,ns,5,3.3e-01
+FXIa,high dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.6294585852809178,13.33423901481218,0.54,1,ns,6,5.4e-01
+INR,high dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-1.4336342055699653,13.24278876952017,0.175,1,ns,1,1.7e-01
+INR,high dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-0.9785298694044005,13.532109394862113,0.345,1,ns,2,3.4e-01
+INR,high dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-1.9781940357984817,11.150868684075583,0.073,1,ns,3,7.3e-02
+INR,high dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-1.7621567612457327,11.657154064498089,0.104,1,ns,4,1.0e-01
+INR,high dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-1.190743401093777,12.37462438558649,0.256,1,ns,5,2.6e-01
+INR,high dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,0.2465059660491491,12.49614774526779,0.809,1,ns,6,8.1e-01
+PT,high dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-1.495110654149161,13.27017006618825,0.158,1,ns,1,1.6e-01
+PT,high dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-1.02083557106808,13.481195714474667,0.325,1,ns,2,3.2e-01
+PT,high dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-2.005032956711472,11.219888574353021,0.07,1,ns,3,7.0e-02
+PT,high dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-1.7680891560043068,11.519031933458272,0.103,1,ns,4,1.0e-01
+PT,high dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-1.2007090104015952,12.27826390763709,0.253,1,ns,5,2.5e-01
+PT,high dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,0.3343669275452125,12.489038785834735,0.744,1,ns,6,7.4e-01
+PTA,high dose group,Result,30min before ivdrip,1h after ivdrip,8,8,1.4419669827830375,11.635558132243114,0.176,1,ns,1,1.8e-01
+PTA,high dose group,Result,30min before ivdrip,2h after ivdrip,8,8,0.9354651003001363,13.997299317627231,0.365,1,ns,2,3.6e-01
+PTA,high dose group,Result,30min before ivdrip,24h after ivdrip,8,8,1.870432046584777,13.716265432288955,0.083,1,ns,3,8.3e-02
+PTA,high dose group,Result,30min before ivdrip,72h after ivdrip,8,8,1.655591809761441,13.796550445747942,0.12,1,ns,4,1.2e-01
+PTA,high dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,1.1197182563044217,13.941309924907577,0.282,1,ns,5,2.8e-01
+PTA,high dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-0.4429414621427439,13.536774637866488,0.665,1,ns,6,6.6e-01
+TT,high dose group,Result,30min before ivdrip,1h after ivdrip,8,8,-9.715989899576366,8.68257853777206,5.9e-6,8.85e-5,****,1,5.9e-06
+TT,high dose group,Result,30min before ivdrip,2h after ivdrip,8,8,-10.288893702724096,8.342109494550956,5.03e-6,8.05e-5,****,2,5.0e-06
+TT,high dose group,Result,30min before ivdrip,24h after ivdrip,8,8,-12.441711939860115,8.14304050875864,1.39e-6,2.64e-5,****,3,1.4e-06
+TT,high dose group,Result,30min before ivdrip,72h after ivdrip,8,8,-14.272157818490651,9.094742675255137,1.56e-7,3.28e-6,****,4,1.6e-07
+TT,high dose group,Result,30min before ivdrip,2h after the end of ivdrip,8,8,-7.627546805589494,11.468435082140118,8.01e-6,1.12e-4,***,5,8.0e-06
+TT,high dose group,Result,30min before ivdrip,6h after the end of ivdrip,8,8,-2.8744208254824506,13.865850412563224,0.012,0.074,ns,6,1.2e-02

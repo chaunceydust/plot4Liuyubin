@@ -1,0 +1,211 @@
+INDEX,Time,.y.,group1,group2,n1,n2,statistic,p,p.adj,p.adj.signif,batch,p.scient
+APTT,30min before ivdrip,Result,low dose group,middle dose group,8,8,19,0.195,0.585,ns,1,2.0e-01
+APTT,30min before ivdrip,Result,low dose group,high dose group,8,8,20,0.234,0.585,ns,2,2.3e-01
+APTT,30min before ivdrip,Result,middle dose group,high dose group,8,8,37,0.645,0.645,ns,3,6.4e-01
+D-Dimer,30min before ivdrip,Result,low dose group,middle dose group,8,8,35,0.792,1,ns,1,7.9e-01
+D-Dimer,30min before ivdrip,Result,low dose group,high dose group,8,8,36.5,0.674,1,ns,2,6.7e-01
+D-Dimer,30min before ivdrip,Result,middle dose group,high dose group,8,8,32,1,1,ns,3,1.0e+00
+FIB,30min before ivdrip,Result,low dose group,middle dose group,8,8,14.5,0.074,0.222,ns,1,7.4e-02
+FIB,30min before ivdrip,Result,low dose group,high dose group,8,8,20,0.226,0.452,ns,2,2.3e-01
+FIB,30min before ivdrip,Result,middle dose group,high dose group,8,8,37.5,0.598,0.598,ns,3,6.0e-01
+FIIa,30min before ivdrip,Result,low dose group,middle dose group,8,8,29,0.789,1,ns,1,7.9e-01
+FIIa,30min before ivdrip,Result,low dose group,high dose group,8,8,32.5,1,1,ns,2,1.0e+00
+FIIa,30min before ivdrip,Result,middle dose group,high dose group,8,8,31.5,1,1,ns,3,1.0e+00
+FXa,30min before ivdrip,Result,low dose group,middle dose group,8,8,32.5,1,1,ns,1,1.0e+00
+FXa,30min before ivdrip,Result,low dose group,high dose group,8,8,31,0.959,1,ns,2,9.6e-01
+FXa,30min before ivdrip,Result,middle dose group,high dose group,8,8,33,0.958,1,ns,3,9.6e-01
+FXIa,30min before ivdrip,Result,low dose group,middle dose group,8,8,25.5,0.528,0.528,ns,1,5.3e-01
+FXIa,30min before ivdrip,Result,low dose group,high dose group,8,8,20,0.227,0.465,ns,2,2.3e-01
+FXIa,30min before ivdrip,Result,middle dose group,high dose group,8,8,18,0.155,0.465,ns,3,1.5e-01
+INR,30min before ivdrip,Result,low dose group,middle dose group,8,8,37,0.633,1,ns,1,6.3e-01
+INR,30min before ivdrip,Result,low dose group,high dose group,8,8,34,0.874,1,ns,2,8.7e-01
+INR,30min before ivdrip,Result,middle dose group,high dose group,8,8,33,0.958,1,ns,3,9.6e-01
+PT,30min before ivdrip,Result,low dose group,middle dose group,8,8,38.5,0.526,1,ns,1,5.3e-01
+PT,30min before ivdrip,Result,low dose group,high dose group,8,8,32.5,1,1,ns,2,1.0e+00
+PT,30min before ivdrip,Result,middle dose group,high dose group,8,8,31.5,1,1,ns,3,1.0e+00
+PTA,30min before ivdrip,Result,low dose group,middle dose group,8,8,25.5,0.528,1,ns,1,5.3e-01
+PTA,30min before ivdrip,Result,low dose group,high dose group,8,8,30,0.875,1,ns,2,8.8e-01
+PTA,30min before ivdrip,Result,middle dose group,high dose group,8,8,32,1,1,ns,3,1.0e+00
+TT,30min before ivdrip,Result,low dose group,middle dose group,8,8,39.5,0.461,0.538,ns,1,4.6e-01
+TT,30min before ivdrip,Result,low dose group,high dose group,8,8,48.5,0.092,0.277,ns,2,9.2e-02
+TT,30min before ivdrip,Result,middle dose group,high dose group,8,8,43,0.269,0.538,ns,3,2.7e-01
+APTT,1h after ivdrip,Result,low dose group,middle dose group,8,8,18,0.156,0.312,ns,1,1.6e-01
+APTT,1h after ivdrip,Result,low dose group,high dose group,8,8,14,0.066,0.196,ns,2,6.6e-02
+APTT,1h after ivdrip,Result,middle dose group,high dose group,8,8,35,0.793,0.793,ns,3,7.9e-01
+D-Dimer,1h after ivdrip,Result,low dose group,middle dose group,8,8,37,0.636,1,ns,1,6.4e-01
+D-Dimer,1h after ivdrip,Result,low dose group,high dose group,8,8,36,0.712,1,ns,2,7.1e-01
+D-Dimer,1h after ivdrip,Result,middle dose group,high dose group,8,8,30.5,0.916,1,ns,3,9.2e-01
+FIB,1h after ivdrip,Result,low dose group,middle dose group,8,8,26,0.563,1,ns,1,5.6e-01
+FIB,1h after ivdrip,Result,low dose group,high dose group,8,8,29,0.798,1,ns,2,8.0e-01
+FIB,1h after ivdrip,Result,middle dose group,high dose group,8,8,35,0.793,1,ns,3,7.9e-01
+FIIa,1h after ivdrip,Result,low dose group,middle dose group,8,8,28,0.712,1,ns,1,7.1e-01
+FIIa,1h after ivdrip,Result,low dose group,high dose group,8,8,33.5,0.916,1,ns,2,9.2e-01
+FIIa,1h after ivdrip,Result,middle dose group,high dose group,8,8,36,0.712,1,ns,3,7.1e-01
+FXa,1h after ivdrip,Result,low dose group,middle dose group,8,8,32,1,1,ns,1,1e+00
+FXa,1h after ivdrip,Result,low dose group,high dose group,8,8,31.5,1,1,ns,2,1e+00
+FXa,1h after ivdrip,Result,middle dose group,high dose group,8,8,31.5,1,1,ns,3,1e+00
+FXIa,1h after ivdrip,Result,low dose group,middle dose group,8,8,29,0.792,0.837,ns,1,7.9e-01
+FXIa,1h after ivdrip,Result,low dose group,high dose group,8,8,21,0.279,0.837,ns,2,2.8e-01
+FXIa,1h after ivdrip,Result,middle dose group,high dose group,8,8,23,0.372,0.837,ns,3,3.7e-01
+INR,1h after ivdrip,Result,low dose group,middle dose group,8,8,36.5,0.671,1,ns,1,6.7e-01
+INR,1h after ivdrip,Result,low dose group,high dose group,8,8,30.5,0.916,1,ns,2,9.2e-01
+INR,1h after ivdrip,Result,middle dose group,high dose group,8,8,26.5,0.597,1,ns,3,6.0e-01
+PT,1h after ivdrip,Result,low dose group,middle dose group,8,8,36.5,0.671,1,ns,1,6.7e-01
+PT,1h after ivdrip,Result,low dose group,high dose group,8,8,25.5,0.526,1,ns,2,5.3e-01
+PT,1h after ivdrip,Result,middle dose group,high dose group,8,8,22.5,0.342,1,ns,3,3.4e-01
+PTA,1h after ivdrip,Result,low dose group,middle dose group,8,8,26.5,0.594,1,ns,1,5.9e-01
+PTA,1h after ivdrip,Result,low dose group,high dose group,8,8,33,0.958,1,ns,2,9.6e-01
+PTA,1h after ivdrip,Result,middle dose group,high dose group,8,8,38,0.562,1,ns,3,5.6e-01
+TT,1h after ivdrip,Result,low dose group,middle dose group,8,8,20.5,0.247,0.494,ns,1,2.5e-01
+TT,1h after ivdrip,Result,low dose group,high dose group,8,8,12,0.04,0.121,ns,2,4.0e-02
+TT,1h after ivdrip,Result,middle dose group,high dose group,8,8,20.5,0.247,0.494,ns,3,2.5e-01
+APTT,2h after ivdrip,Result,low dose group,middle dose group,8,8,18,0.161,0.322,ns,1,1.6e-01
+APTT,2h after ivdrip,Result,low dose group,high dose group,8,8,14.5,0.074,0.222,ns,2,7.4e-02
+APTT,2h after ivdrip,Result,middle dose group,high dose group,8,8,36.5,0.674,0.674,ns,3,6.7e-01
+D-Dimer,2h after ivdrip,Result,low dose group,middle dose group,8,8,38,0.563,1,ns,1,5.6e-01
+D-Dimer,2h after ivdrip,Result,low dose group,high dose group,8,8,34,0.875,1,ns,2,8.8e-01
+D-Dimer,2h after ivdrip,Result,middle dose group,high dose group,8,8,22.5,0.343,1,ns,3,3.4e-01
+FIB,2h after ivdrip,Result,low dose group,middle dose group,8,8,18,0.161,0.483,ns,1,1.6e-01
+FIB,2h after ivdrip,Result,low dose group,high dose group,8,8,23,0.382,0.764,ns,2,3.8e-01
+FIB,2h after ivdrip,Result,middle dose group,high dose group,8,8,34,0.878,0.878,ns,3,8.8e-01
+FIIa,2h after ivdrip,Result,low dose group,middle dose group,8,8,33.5,0.916,1,ns,1,9.2e-01
+FIIa,2h after ivdrip,Result,low dose group,high dose group,8,8,36,0.712,1,ns,2,7.1e-01
+FIIa,2h after ivdrip,Result,middle dose group,high dose group,8,8,34.5,0.833,1,ns,3,8.3e-01
+FXa,2h after ivdrip,Result,low dose group,middle dose group,8,8,33.5,0.916,1,ns,1,9.2e-01
+FXa,2h after ivdrip,Result,low dose group,high dose group,8,8,32.5,1,1,ns,2,1.0e+00
+FXa,2h after ivdrip,Result,middle dose group,high dose group,8,8,34,0.874,1,ns,3,8.7e-01
+FXIa,2h after ivdrip,Result,low dose group,middle dose group,8,8,44,0.227,0.681,ns,1,2.3e-01
+FXIa,2h after ivdrip,Result,low dose group,high dose group,8,8,27,0.636,0.681,ns,2,6.4e-01
+FXIa,2h after ivdrip,Result,middle dose group,high dose group,8,8,21.5,0.293,0.681,ns,3,2.9e-01
+INR,2h after ivdrip,Result,low dose group,middle dose group,8,8,44,0.226,0.678,ns,1,2.3e-01
+INR,2h after ivdrip,Result,low dose group,high dose group,8,8,43.5,0.246,0.678,ns,2,2.5e-01
+INR,2h after ivdrip,Result,middle dose group,high dose group,8,8,34,0.874,0.874,ns,3,8.7e-01
+PT,2h after ivdrip,Result,low dose group,middle dose group,8,8,44,0.226,0.678,ns,1,2.3e-01
+PT,2h after ivdrip,Result,low dose group,high dose group,8,8,40.5,0.398,0.796,ns,2,4.0e-01
+PT,2h after ivdrip,Result,middle dose group,high dose group,8,8,28,0.712,0.796,ns,3,7.1e-01
+PTA,2h after ivdrip,Result,low dose group,middle dose group,8,8,19.5,0.207,0.621,ns,1,2.1e-01
+PTA,2h after ivdrip,Result,low dose group,high dose group,8,8,21.5,0.292,0.621,ns,2,2.9e-01
+PTA,2h after ivdrip,Result,middle dose group,high dose group,8,8,29.5,0.833,0.833,ns,3,8.3e-01
+TT,2h after ivdrip,Result,low dose group,middle dose group,8,8,22,0.318,0.318,ns,1,3.2e-01
+TT,2h after ivdrip,Result,low dose group,high dose group,8,8,11.5,0.035,0.084,ns,2,3.5e-02
+TT,2h after ivdrip,Result,middle dose group,high dose group,8,8,11,0.028,0.084,ns,3,2.8e-02
+APTT,24h after ivdrip,Result,low dose group,middle dose group,8,8,23,0.382,0.764,ns,1,3.8e-01
+APTT,24h after ivdrip,Result,low dose group,high dose group,8,8,2,6.22e-4,0.002,**,2,6.2e-04
+APTT,24h after ivdrip,Result,middle dose group,high dose group,8,8,28,0.721,0.764,ns,3,7.2e-01
+D-Dimer,24h after ivdrip,Result,low dose group,middle dose group,8,8,30.5,0.916,1,ns,1,9.2e-01
+D-Dimer,24h after ivdrip,Result,low dose group,high dose group,8,8,36,0.713,1,ns,2,7.1e-01
+D-Dimer,24h after ivdrip,Result,middle dose group,high dose group,8,8,37.5,0.599,1,ns,3,6.0e-01
+FIB,24h after ivdrip,Result,low dose group,middle dose group,8,8,22,0.328,0.656,ns,1,3.3e-01
+FIB,24h after ivdrip,Result,low dose group,high dose group,8,8,17,0.13,0.39,ns,2,1.3e-01
+FIB,24h after ivdrip,Result,middle dose group,high dose group,8,8,26.5,0.599,0.656,ns,3,6.0e-01
+FIIa,24h after ivdrip,Result,low dose group,middle dose group,8,8,28.5,0.751,0.751,ns,1,7.5e-01
+FIIa,24h after ivdrip,Result,low dose group,high dose group,8,8,41.5,0.339,0.678,ns,2,3.4e-01
+FIIa,24h after ivdrip,Result,middle dose group,high dose group,8,8,44,0.225,0.675,ns,3,2.2e-01
+FXa,24h after ivdrip,Result,low dose group,middle dose group,8,8,35.5,0.752,1,ns,1,7.5e-01
+FXa,24h after ivdrip,Result,low dose group,high dose group,8,8,35.5,0.753,1,ns,2,7.5e-01
+FXa,24h after ivdrip,Result,middle dose group,high dose group,8,8,34,0.875,1,ns,3,8.8e-01
+FXIa,24h after ivdrip,Result,low dose group,middle dose group,8,8,31,0.959,1,ns,1,9.6e-01
+FXIa,24h after ivdrip,Result,low dose group,high dose group,8,8,30,0.878,1,ns,2,8.8e-01
+FXIa,24h after ivdrip,Result,middle dose group,high dose group,8,8,29.5,0.834,1,ns,3,8.3e-01
+INR,24h after ivdrip,Result,low dose group,middle dose group,8,8,21,0.267,0.801,ns,1,2.7e-01
+INR,24h after ivdrip,Result,low dose group,high dose group,8,8,25.5,0.527,1,ns,2,5.3e-01
+INR,24h after ivdrip,Result,middle dose group,high dose group,8,8,27,0.636,1,ns,3,6.4e-01
+PT,24h after ivdrip,Result,low dose group,middle dose group,8,8,21,0.267,0.801,ns,1,2.7e-01
+PT,24h after ivdrip,Result,low dose group,high dose group,8,8,23,0.367,0.801,ns,2,3.7e-01
+PT,24h after ivdrip,Result,middle dose group,high dose group,8,8,25,0.494,0.801,ns,3,4.9e-01
+PTA,24h after ivdrip,Result,low dose group,middle dose group,8,8,43,0.267,0.801,ns,1,2.7e-01
+PTA,24h after ivdrip,Result,low dose group,high dose group,8,8,38,0.562,1,ns,2,5.6e-01
+PTA,24h after ivdrip,Result,middle dose group,high dose group,8,8,37.5,0.599,1,ns,3,6.0e-01
+TT,24h after ivdrip,Result,low dose group,middle dose group,8,8,16,0.105,0.105,ns,1,1e-01
+TT,24h after ivdrip,Result,low dose group,high dose group,8,8,4,0.002,0.006,**,2,2e-03
+TT,24h after ivdrip,Result,middle dose group,high dose group,8,8,7,0.007,0.014,*,3,7e-03
+APTT,72h after ivdrip,Result,low dose group,middle dose group,8,8,17,0.13,0.26,ns,1,1.3e-01
+APTT,72h after ivdrip,Result,low dose group,high dose group,8,8,5.5,0.006,0.019,*,2,6.0e-03
+APTT,72h after ivdrip,Result,middle dose group,high dose group,8,8,26,0.563,0.563,ns,3,5.6e-01
+D-Dimer,72h after ivdrip,Result,low dose group,middle dose group,8,8,44,0.226,0.678,ns,1,2.3e-01
+D-Dimer,72h after ivdrip,Result,low dose group,high dose group,8,8,39.5,0.462,0.924,ns,2,4.6e-01
+D-Dimer,72h after ivdrip,Result,middle dose group,high dose group,8,8,31.5,1,1,ns,3,1.0e+00
+FIB,72h after ivdrip,Result,low dose group,middle dose group,8,8,24.5,0.462,0.924,ns,1,4.6e-01
+FIB,72h after ivdrip,Result,low dose group,high dose group,8,8,20,0.234,0.702,ns,2,2.3e-01
+FIB,72h after ivdrip,Result,middle dose group,high dose group,8,8,25,0.505,0.924,ns,3,5.0e-01
+FIIa,72h after ivdrip,Result,low dose group,middle dose group,8,8,31.5,1,1,ns,1,1.0e+00
+FIIa,72h after ivdrip,Result,low dose group,high dose group,8,8,40.5,0.399,1,ns,2,4.0e-01
+FIIa,72h after ivdrip,Result,middle dose group,high dose group,8,8,40,0.428,1,ns,3,4.3e-01
+FXa,72h after ivdrip,Result,low dose group,middle dose group,8,8,34,0.874,1,ns,1,8.7e-01
+FXa,72h after ivdrip,Result,low dose group,high dose group,8,8,37.5,0.599,1,ns,2,6.0e-01
+FXa,72h after ivdrip,Result,middle dose group,high dose group,8,8,39,0.494,1,ns,3,4.9e-01
+FXIa,72h after ivdrip,Result,low dose group,middle dose group,8,8,45,0.195,0.585,ns,1,2.0e-01
+FXIa,72h after ivdrip,Result,low dose group,high dose group,8,8,34,0.878,1,ns,2,8.8e-01
+FXIa,72h after ivdrip,Result,middle dose group,high dose group,8,8,25.5,0.528,1,ns,3,5.3e-01
+INR,72h after ivdrip,Result,low dose group,middle dose group,8,8,36,0.712,1,ns,1,7.1e-01
+INR,72h after ivdrip,Result,low dose group,high dose group,8,8,30,0.874,1,ns,2,8.7e-01
+INR,72h after ivdrip,Result,middle dose group,high dose group,8,8,25.5,0.526,1,ns,3,5.3e-01
+PT,72h after ivdrip,Result,low dose group,middle dose group,8,8,36,0.712,1,ns,1,7.1e-01
+PT,72h after ivdrip,Result,low dose group,high dose group,8,8,26,0.561,1,ns,2,5.6e-01
+PT,72h after ivdrip,Result,middle dose group,high dose group,8,8,20.5,0.245,0.735,ns,3,2.4e-01
+PTA,72h after ivdrip,Result,low dose group,middle dose group,8,8,25.5,0.527,1,ns,1,5.3e-01
+PTA,72h after ivdrip,Result,low dose group,high dose group,8,8,34.5,0.833,1,ns,2,8.3e-01
+PTA,72h after ivdrip,Result,middle dose group,high dose group,8,8,40,0.43,1,ns,3,4.3e-01
+TT,72h after ivdrip,Result,low dose group,middle dose group,8,8,14.5,0.074,0.074,ns,1,7.4e-02
+TT,72h after ivdrip,Result,low dose group,high dose group,8,8,5.5,0.006,0.019,*,2,6.0e-03
+TT,72h after ivdrip,Result,middle dose group,high dose group,8,8,11.5,0.035,0.071,ns,3,3.5e-02
+APTT,2h after the end of ivdrip,Result,low dose group,middle dose group,8,8,20.5,0.248,0.516,ns,1,2.5e-01
+APTT,2h after the end of ivdrip,Result,low dose group,high dose group,8,8,18.5,0.172,0.516,ns,2,1.7e-01
+APTT,2h after the end of ivdrip,Result,middle dose group,high dose group,8,8,32,1,1,ns,3,1.0e+00
+D-Dimer,2h after the end of ivdrip,Result,low dose group,middle dose group,8,8,50,0.065,0.195,ns,1,6.5e-02
+D-Dimer,2h after the end of ivdrip,Result,low dose group,high dose group,8,8,35.5,0.752,1,ns,2,7.5e-01
+D-Dimer,2h after the end of ivdrip,Result,middle dose group,high dose group,8,8,27.5,0.672,1,ns,3,6.7e-01
+FIB,2h after the end of ivdrip,Result,low dose group,middle dose group,8,8,22,0.328,0.984,ns,1,3.3e-01
+FIB,2h after the end of ivdrip,Result,low dose group,high dose group,8,8,25,0.505,1,ns,2,5.0e-01
+FIB,2h after the end of ivdrip,Result,middle dose group,high dose group,8,8,29,0.798,1,ns,3,8.0e-01
+FIIa,2h after the end of ivdrip,Result,low dose group,middle dose group,8,8,32.5,1,1,ns,1,1.0e+00
+FIIa,2h after the end of ivdrip,Result,low dose group,high dose group,8,8,32,1,1,ns,2,1.0e+00
+FIIa,2h after the end of ivdrip,Result,middle dose group,high dose group,8,8,28.5,0.752,1,ns,3,7.5e-01
+FXa,2h after the end of ivdrip,Result,low dose group,middle dose group,8,8,29,0.792,1,ns,1,7.9e-01
+FXa,2h after the end of ivdrip,Result,low dose group,high dose group,8,8,31.5,1,1,ns,2,1.0e+00
+FXa,2h after the end of ivdrip,Result,middle dose group,high dose group,8,8,33,0.958,1,ns,3,9.6e-01
+FXIa,2h after the end of ivdrip,Result,low dose group,middle dose group,8,8,30.5,0.916,0.916,ns,1,9.2e-01
+FXIa,2h after the end of ivdrip,Result,low dose group,high dose group,8,8,20,0.234,0.678,ns,2,2.3e-01
+FXIa,2h after the end of ivdrip,Result,middle dose group,high dose group,8,8,20,0.226,0.678,ns,3,2.3e-01
+INR,2h after the end of ivdrip,Result,low dose group,middle dose group,8,8,57,0.01,0.029,*,1,1.0e-02
+INR,2h after the end of ivdrip,Result,low dose group,high dose group,8,8,32,1,1,ns,2,1.0e+00
+INR,2h after the end of ivdrip,Result,middle dose group,high dose group,8,8,12,0.037,0.075,ns,3,3.7e-02
+PT,2h after the end of ivdrip,Result,low dose group,middle dose group,8,8,56.5,0.012,0.034,*,1,1.2e-02
+PT,2h after the end of ivdrip,Result,low dose group,high dose group,8,8,28.5,0.751,0.751,ns,2,7.5e-01
+PT,2h after the end of ivdrip,Result,middle dose group,high dose group,8,8,8.5,0.015,0.034,*,3,1.5e-02
+PTA,2h after the end of ivdrip,Result,low dose group,middle dose group,8,8,6,0.007,0.022,*,1,7.0e-03
+PTA,2h after the end of ivdrip,Result,low dose group,high dose group,8,8,32.5,1,1,ns,2,1.0e+00
+PTA,2h after the end of ivdrip,Result,middle dose group,high dose group,8,8,53.5,0.026,0.052,ns,3,2.6e-02
+TT,2h after the end of ivdrip,Result,low dose group,middle dose group,8,8,20,0.227,0.312,ns,1,2.3e-01
+TT,2h after the end of ivdrip,Result,low dose group,high dose group,8,8,13.5,0.058,0.174,ns,2,5.8e-02
+TT,2h after the end of ivdrip,Result,middle dose group,high dose group,8,8,18,0.156,0.312,ns,3,1.6e-01
+APTT,6h after the end of ivdrip,Result,low dose group,middle dose group,8,8,26,0.574,1,ns,1,5.7e-01
+APTT,6h after the end of ivdrip,Result,low dose group,high dose group,8,8,18,0.161,0.483,ns,2,1.6e-01
+APTT,6h after the end of ivdrip,Result,middle dose group,high dose group,8,8,27,0.645,1,ns,3,6.4e-01
+D-Dimer,6h after the end of ivdrip,Result,low dose group,middle dose group,8,8,42.5,0.293,0.879,ns,1,2.9e-01
+D-Dimer,6h after the end of ivdrip,Result,low dose group,high dose group,8,8,33,0.958,0.958,ns,2,9.6e-01
+D-Dimer,6h after the end of ivdrip,Result,middle dose group,high dose group,8,8,22,0.317,0.879,ns,3,3.2e-01
+FIB,6h after the end of ivdrip,Result,low dose group,middle dose group,8,8,25,0.505,1,ns,1,5.0e-01
+FIB,6h after the end of ivdrip,Result,low dose group,high dose group,8,8,26,0.574,1,ns,2,5.7e-01
+FIB,6h after the end of ivdrip,Result,middle dose group,high dose group,8,8,33,0.959,1,ns,3,9.6e-01
+FIIa,6h after the end of ivdrip,Result,low dose group,middle dose group,8,8,31.5,1,1,ns,1,1.0e+00
+FIIa,6h after the end of ivdrip,Result,low dose group,high dose group,8,8,33.5,0.916,1,ns,2,9.2e-01
+FIIa,6h after the end of ivdrip,Result,middle dose group,high dose group,8,8,36,0.712,1,ns,3,7.1e-01
+FXa,6h after the end of ivdrip,Result,low dose group,middle dose group,8,8,24.5,0.462,1,ns,1,4.6e-01
+FXa,6h after the end of ivdrip,Result,low dose group,high dose group,8,8,29.5,0.833,1,ns,2,8.3e-01
+FXa,6h after the end of ivdrip,Result,middle dose group,high dose group,8,8,39.5,0.462,1,ns,3,4.6e-01
+FXIa,6h after the end of ivdrip,Result,low dose group,middle dose group,8,8,27,0.645,1,ns,1,6.4e-01
+FXIa,6h after the end of ivdrip,Result,low dose group,high dose group,8,8,21.5,0.293,0.879,ns,2,2.9e-01
+FXIa,6h after the end of ivdrip,Result,middle dose group,high dose group,8,8,26.5,0.599,1,ns,3,6.0e-01
+INR,6h after the end of ivdrip,Result,low dose group,middle dose group,8,8,53,0.03,0.09,ns,1,3.0e-02
+INR,6h after the end of ivdrip,Result,low dose group,high dose group,8,8,43,0.268,0.536,ns,2,2.7e-01
+INR,6h after the end of ivdrip,Result,middle dose group,high dose group,8,8,29,0.792,0.792,ns,3,7.9e-01
+PT,6h after the end of ivdrip,Result,low dose group,middle dose group,8,8,53,0.03,0.09,ns,1,3.0e-02
+PT,6h after the end of ivdrip,Result,low dose group,high dose group,8,8,42.5,0.291,0.582,ns,2,2.9e-01
+PT,6h after the end of ivdrip,Result,middle dose group,high dose group,8,8,28,0.713,0.713,ns,3,7.1e-01
+PTA,6h after the end of ivdrip,Result,low dose group,middle dose group,8,8,12,0.04,0.12,ns,1,4.0e-02
+PTA,6h after the end of ivdrip,Result,low dose group,high dose group,8,8,21.5,0.293,0.586,ns,2,2.9e-01
+PTA,6h after the end of ivdrip,Result,middle dose group,high dose group,8,8,35,0.793,0.793,ns,3,7.9e-01
+TT,6h after the end of ivdrip,Result,low dose group,middle dose group,8,8,25,0.494,1,ns,1,4.9e-01
+TT,6h after the end of ivdrip,Result,low dose group,high dose group,8,8,29.5,0.833,1,ns,2,8.3e-01
+TT,6h after the end of ivdrip,Result,middle dose group,high dose group,8,8,37.5,0.599,1,ns,3,6.0e-01

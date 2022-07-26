@@ -1,0 +1,7 @@
+Time,INDEX,groupA,groupB,flag
+30min before ivdrip,FDP,low dose group,high dose group,identity
+1h after ivdrip,FDP,low dose group,high dose group,identity
+2h after ivdrip,FDP,low dose group,middle dose group,identity
+2h after ivdrip,FDP,low dose group,high dose group,identity
+2h after ivdrip,FDP,middle dose group,high dose group,identity
+2h after the end of ivdrip,FDP,low dose group,middle dose group,identity
