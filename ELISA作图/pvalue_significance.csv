@@ -1,0 +1,5 @@
+group,.y.,group1,group2,n1,n2,statistic,p,p.adj,p.adj.signif,y.position,groups,xmin,xmax,tag,top,y.pos,p.scient,custom.label
+APTT(s),concentration,control,iv(0h),4,4,0,0.029,0.429,ns,222.2884285714286,,1,3,1,90.29089986588085,99.31998985246894,2.9e-02,0.029
+APTT(s),concentration,control,iv(1h),4,4,0,0.029,0.429,ns,260.4548571428571,,1,4,2,90.29089986588085,117.3781698256451,2.9e-02,0.029
+PT(s),concentration,control,iv(0h),4,4,0,0.028,0.426,ns,126.68842857142857,,1,3,1,33.61656609143081,36.978222700573895,2.8e-02,0.028
+TT(s),concentration,control,iv(0h),4,4,0,0.029,0.429,ns,373.7884285714286,,1,3,1,157.85015242098794,173.63516766308675,2.9e-02,0.029

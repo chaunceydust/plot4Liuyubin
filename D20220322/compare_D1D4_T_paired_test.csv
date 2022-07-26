@@ -1,0 +1,10 @@
+"","Group","project",".y.","group1","group2","n1","n2","statistic","df","p"
+"1","low dose group","HDL-C","RESULT","D1","D4",7,7,0.757916571872276,6,0.477
+"2","middle dose group","HDL-C","RESULT","D1","D4",8,8,-0.133745560064726,7,0.897
+"3","high dose group","HDL-C","RESULT","D1","D4",8,8,1.36462553842412,7,0.215
+"4","low dose group","LDL-C","RESULT","D1","D4",7,7,0.553703486127646,6,0.6
+"5","middle dose group","LDL-C","RESULT","D1","D4",8,8,1.11197634781951,7,0.303
+"6","high dose group","LDL-C","RESULT","D1","D4",8,8,1.85553698569947,7,0.106
+"7","low dose group","TG","RESULT","D1","D4",7,7,1.49398559995318,6,0.186
+"8","middle dose group","TG","RESULT","D1","D4",8,8,3.82564217404999,7,0.00649
+"9","high dose group","TG","RESULT","D1","D4",8,8,3.97441526787262,7,0.00536
